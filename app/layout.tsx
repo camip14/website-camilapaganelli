@@ -19,9 +19,24 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Camila Paganelli — Product & Credit Consultant",
+  title: "Camila Paganelli — Producto, AI y Negocio Sostenible",
   description:
-    "Consultora independiente en producto financiero, crédito retail y AI. Fractional, proyectos, advisory. Buenos Aires / remoto.",
+    "Consultora independiente en estrategia de producto, AI aplicada y negocio sostenible. Fractional, proyectos y advisory. Buenos Aires / Bariloche / remoto.",
+  openGraph: {
+    title: "Camila Paganelli — Producto, AI y Negocio Sostenible",
+    description:
+      "Consultora independiente en estrategia de producto, AI aplicada y negocio sostenible. Fractional, proyectos y advisory. Buenos Aires / Bariloche / remoto.",
+    url: "https://www.camipaganelli.com",
+    siteName: "Camila Paganelli",
+    locale: "es_AR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Camila Paganelli — Producto, AI y Negocio Sostenible",
+    description:
+      "Consultora independiente en estrategia de producto, AI aplicada y negocio sostenible. Fractional, proyectos y advisory. Buenos Aires / Bariloche / remoto.",
+  },
 };
 
 export default function RootLayout({
