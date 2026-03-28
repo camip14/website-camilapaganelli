@@ -9,7 +9,7 @@ const fadeUp = (delay: number) => ({
 });
 
 const badges = [
-  { label: "Crédito retail", highlight: true },
+  { label: "Servicios financieros", highlight: true },
   { label: "AI & Automatización", highlight: true },
   { label: "Sustentabilidad", highlight: true },
   { label: "Fractional · Proyectos", highlight: false },
@@ -45,7 +45,7 @@ export default function Hero() {
               color: "var(--forest-mid)",
             }}
           >
-            Consultora independiente · Buenos Aires
+            Consultora independiente · Argentina
           </motion.p>
 
           <motion.h1
@@ -64,7 +64,7 @@ export default function Hero() {
             <em
               style={{
                 fontStyle: "italic",
-                color: "var(--forest)",
+                color: "var(--ink)",
                 fontWeight: 300,
               }}
             >

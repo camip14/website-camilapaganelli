@@ -8,37 +8,40 @@ const areas = [
     number: "01",
     title: "Producto & Estrategia",
     description:
-      "Defino qué construir y por qué. Diagnostico cuando algo no funciona y diseño la solución. Trabajo con equipos que necesitan claridad antes de ejecutar — o que ejecutaron sin claridad y necesitan reencuadrarse. Con ownership real sobre las decisiones, no solo sobre las pantallas.",
+      "Defino qué construir y por qué. Trabajo con equipos que necesitan claridad antes de ejecutar.",
     tags: [
       "Estrategia de producto",
       "Diagnóstico y rediseño",
       "Productos con lógica compleja",
       "Flujos de usuario de punta a punta",
     ],
+    cta: "/#soluciones",
   },
   {
     number: "02",
     title: "AI & Automatización",
     description:
-      "Entro cuando hay procesos manuales que frenan el negocio, productos que necesitan una capa de inteligencia, o equipos que no saben por dónde empezar. Diseño e implemento con foco en impacto operativo medible.",
+      "Diseño e implemento con foco en impacto operativo medible. Desde procesos manuales hasta productos con capa de inteligencia.",
     tags: [
       "Automatización de procesos",
       "Agentes conversacionales",
       "Integración de AI en productos existentes",
       "De cero a implementado",
     ],
+    cta: "/#soluciones",
   },
   {
     number: "03",
     title: "Negocio Sostenible",
     description:
-      "Trabajo con organizaciones que quieren que su impacto ambiental sea parte de su propuesta de valor — no un ítem de compliance. Entro en estrategia, medición y transformación de procesos.",
+      "Para organizaciones que quieren que su impacto ambiental sea parte de su propuesta de valor, no un ítem de compliance.",
     tags: [
       "Sustentabilidad como ventaja competitiva",
       "Métricas e indicadores de impacto",
       "Transformación de procesos operativos",
       "Industrias con huella compleja",
     ],
+    cta: "/#soluciones",
   },
 ];
 
@@ -107,6 +110,8 @@ export default function Areas() {
               borderRight:
                 i < areas.length - 1 ? "0.5px solid var(--border-thin)" : "none",
               transition: "background-color 0.2s ease",
+              display: "flex",
+              flexDirection: "column",
             }}
             onMouseEnter={(e) => {
               (e.currentTarget as HTMLDivElement).style.backgroundColor =
@@ -154,7 +159,7 @@ export default function Areas() {
               {area.description}
             </p>
 
-            <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.35rem" }}>
+            <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.35rem", marginBottom: "1.5rem" }}>
               {area.tags.map((tag) => (
                 <li
                   key={tag}
@@ -169,6 +174,27 @@ export default function Areas() {
                 </li>
               ))}
             </ul>
+
+            <a
+              href={area.cta}
+              style={{
+                fontFamily: "var(--font-dm-mono), monospace",
+                fontSize: "0.62rem",
+                textTransform: "uppercase",
+                letterSpacing: "0.1em",
+                color: "var(--forest-mid)",
+                alignSelf: "flex-start",
+                marginTop: "auto",
+              }}
+              onMouseEnter={(e) =>
+                ((e.currentTarget as HTMLAnchorElement).style.color = "var(--ink)")
+              }
+              onMouseLeave={(e) =>
+                ((e.currentTarget as HTMLAnchorElement).style.color = "var(--forest-mid)")
+              }
+            >
+              Explorar área →
+            </a>
           </motion.div>
         ))}
       </motion.div>

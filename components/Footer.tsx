@@ -18,7 +18,7 @@ export default function Footer() {
         }}
         className="footer-inner"
       >
-        <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }} className="footer-left">
+        <div style={{ display: "flex", alignItems: "center", gap: "1.2rem" }} className="footer-left">
           <p
             style={{
               fontFamily: "var(--font-dm-mono), monospace",
@@ -27,7 +27,7 @@ export default function Footer() {
               color: "var(--warm-gray)",
             }}
           >
-            © 2026 · Cami Paganelli
+            © 2026 · Camila Paganelli
           </p>
           <a
             href="/about"

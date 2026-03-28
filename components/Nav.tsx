@@ -6,9 +6,10 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
-    { label: "Trabajo", href: "/#trabajo" },
+    { label: "Soluciones", href: "/#soluciones" },
     { label: "Áreas", href: "/#areas" },
     { label: "Proceso", href: "/#proceso" },
+    { label: "Casos de éxito", href: "/#casos" },
     { label: "Sobre mí", href: "/about" },
   ];
 

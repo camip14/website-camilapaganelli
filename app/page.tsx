@@ -1,8 +1,10 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import Marquee from "@/components/Marquee";
+import Solutions from "@/components/Solutions";
 import Areas from "@/components/Areas";
 import HowIWork from "@/components/HowIWork";
-import SelectedWork from "@/components/SelectedWork";
+import CasosDeExito from "@/components/CasosDeExito";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -11,9 +13,11 @@ export default function Home() {
     <main className="site-wrapper">
       <Nav />
       <Hero />
+      <Marquee />
+      <Solutions />
       <Areas />
       <HowIWork />
-      <SelectedWork />
+      <CasosDeExito />
       <Contact />
       <Footer />
     </main>

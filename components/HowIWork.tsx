@@ -108,9 +108,62 @@ export default function HowIWork() {
                     fontSize: "1.1rem",
                     fontWeight: 400,
                     color: "var(--ink)",
+                    position: "relative",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "0.4rem",
                   }}
                 >
                   {item.title}
+                  {item.title === "Roles fractional" && (
+                    <span
+                      className="tooltip-trigger"
+                      style={{
+                        fontFamily: "var(--font-dm-mono), monospace",
+                        fontStyle: "normal",
+                        fontSize: "0.55rem",
+                        letterSpacing: "0.06em",
+                        color: "var(--forest-mid)",
+                        border: "0.5px solid var(--forest-mid)",
+                        borderRadius: "50%",
+                        width: "14px",
+                        height: "14px",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        cursor: "default",
+                        flexShrink: 0,
+                        position: "relative",
+                      }}
+                    >
+                      ?
+                      <span
+                        className="tooltip-box"
+                        style={{
+                          position: "absolute",
+                          bottom: "calc(100% + 8px)",
+                          left: "50%",
+                          transform: "translateX(-50%)",
+                          backgroundColor: "var(--ink)",
+                          color: "var(--off-white)",
+                          fontFamily: "var(--font-dm-mono), monospace",
+                          fontStyle: "normal",
+                          fontSize: "0.6rem",
+                          letterSpacing: "0.04em",
+                          lineHeight: 1.6,
+                          padding: "0.5rem 0.75rem",
+                          borderRadius: "2px",
+                          whiteSpace: "nowrap",
+                          pointerEvents: "none",
+                          opacity: 0,
+                          transition: "opacity 0.15s ease",
+                          zIndex: 10,
+                        }}
+                      >
+                        Desde 10 a 30 hs semanales. Scope definido de antemano.
+                      </span>
+                    </span>
+                  )}
                 </h3>
                 <span
                   style={{
@@ -165,6 +218,9 @@ export default function HowIWork() {
             flex-direction: column !important;
             gap: 0.25rem !important;
           }
+        }
+        .tooltip-trigger:hover .tooltip-box {
+          opacity: 1 !important;
         }
       `}</style>
     </section>
