@@ -9,10 +9,10 @@ const fadeUp = (delay: number) => ({
 });
 
 const badges = [
-  { label: "Servicios financieros", highlight: true },
-  { label: "AI & Automatización", highlight: true },
-  { label: "Sustentabilidad", highlight: true },
-  { label: "Fractional · Proyectos", highlight: false },
+  { label: "Impacto Sostenible", highlight: true },
+  { label: "Inteligencia de Datos", highlight: true },
+  { label: "Eficiencia Operativa", highlight: true },
+  { label: "Fractional · Proyectos · Advisory", highlight: false },
   { label: "EN / ES", highlight: false },
 ];
 
@@ -59,16 +59,16 @@ export default function Hero() {
               color: "var(--ink)",
             }}
           >
-            Lo técnico, lo humano
-            <br />y lo{" "}
+            Sostenibilidad,
+            <br />datos y{" "}
             <em
               style={{
                 fontStyle: "italic",
-                color: "var(--ink)",
+                color: "var(--forest)",
                 fontWeight: 300,
               }}
             >
-              sostenible.
+              operaciones.
             </em>
           </motion.h1>
 
@@ -79,11 +79,11 @@ export default function Hero() {
               fontSize: "0.82rem",
               color: "var(--warm-gray)",
               lineHeight: 1.7,
-              maxWidth: "38ch",
+              maxWidth: "42ch",
             }}
           >
-            Diseño productos y procesos que funcionan para el negocio,
-            para el usuario y para el mundo.
+            Transformo cómo las organizaciones miden su impacto,
+            usan sus datos y hacen funcionar sus operaciones.
           </motion.p>
         </div>
 
@@ -102,9 +102,9 @@ export default function Hero() {
               fontWeight: 400,
             }}
           >
-            "Trabajo en la intersección de lo que la tecnología puede
-            hacer, lo que el negocio necesita y lo que vale la pena
-            construir."
+            &ldquo;Trabajo en la intersección de lo que los datos revelan,
+            lo que las operaciones necesitan y lo que vale la pena
+            sostener.&rdquo;
           </motion.blockquote>
 
           <motion.div

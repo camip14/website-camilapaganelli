@@ -19,23 +19,23 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Camila Paganelli — Producto, AI y Negocio Sostenible",
+  title: "Camila Paganelli — Impacto Sostenible, Inteligencia de Datos, Eficiencia Operativa",
   description:
-    "Consultora independiente en estrategia de producto, AI aplicada y negocio sostenible. Fractional, proyectos y advisory. Buenos Aires / Bariloche / remoto.",
+    "Consultora independiente en sostenibilidad, datos y operaciones. Fractional, proyectos y advisory. Buenos Aires / Bariloche / remoto.",
   openGraph: {
-    title: "Camila Paganelli — Producto, AI y Negocio Sostenible",
+    title: "Camila Paganelli — Impacto Sostenible, Inteligencia de Datos, Eficiencia Operativa",
     description:
-      "Consultora independiente en estrategia de producto, AI aplicada y negocio sostenible. Fractional, proyectos y advisory. Buenos Aires / Bariloche / remoto.",
-    url: "https://www.camipaganelli.com",
+      "Consultora independiente en sostenibilidad, datos y operaciones. Fractional, proyectos y advisory. Buenos Aires / Bariloche / remoto.",
+    url: "https://www.camipaganelli.com.ar",
     siteName: "Camila Paganelli",
     locale: "es_AR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Camila Paganelli — Producto, AI y Negocio Sostenible",
+    title: "Camila Paganelli — Impacto Sostenible, Inteligencia de Datos, Eficiencia Operativa",
     description:
-      "Consultora independiente en estrategia de producto, AI aplicada y negocio sostenible. Fractional, proyectos y advisory. Buenos Aires / Bariloche / remoto.",
+      "Consultora independiente en sostenibilidad, datos y operaciones. Fractional, proyectos y advisory. Buenos Aires / Bariloche / remoto.",
   },
 };
 

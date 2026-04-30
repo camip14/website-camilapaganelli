@@ -56,7 +56,7 @@ export default function Footer() {
             color: "var(--warm-gray)",
           }}
         >
-          Lo técnico, lo humano y lo sostenible · Argentina
+          Sostenibilidad · Datos · Operaciones · Argentina
         </p>
       </div>
 

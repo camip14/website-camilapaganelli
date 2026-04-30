@@ -70,8 +70,8 @@ export default function About() {
               }}
             >
               Con el tiempo ese recorrido me llevó a trabajar en la intersección de tres áreas
-              que raramente aparecen juntas: estrategia de producto, AI aplicada y negocio
-              sostenible. No es una combinación que planifiqué, sino que es el resultado de seguir
+              que raramente aparecen juntas: sostenibilidad, inteligencia de datos y eficiencia
+              operativa. No es una combinación que planifiqué, sino que es el resultado de seguir
               los problemas que me parecían más interesantes.
             </p>
 

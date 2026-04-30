@@ -8,21 +8,21 @@ const items = [
     title: "Roles fractional",
     type: "Liderazgo flexible",
     description:
-      "Me integro al equipo con una dedicación definida. Ideal para organizaciones que necesitan liderazgo de producto sénior sin el costo de una posición full-time.",
-    benefit: "El producto avanza. El equipo aprende.",
+      "Me integro al equipo con una dedicación definida. Ideal para organizaciones que necesitan expertise en sostenibilidad, datos u operaciones sin el costo de una posición full-time.",
+    benefit: "Los procesos mejoran. El equipo aprende.",
   },
   {
     title: "Proyectos acotados",
     type: "Entrega definida",
     description:
-      "Diagnóstico, estrategia de producto, investigación de usuarios, lanzamientos. Scope claro, entregables concretos, timeline realista.",
+      "Diagnóstico de sustentabilidad, análisis de datos, optimización de procesos. Scope claro, entregables concretos, timeline realista.",
     benefit: "Problema definido, solución entregada, resultado medible.",
   },
   {
     title: "Advisory continuo",
     type: "Sounding board",
     description:
-      "Para equipos que necesitan un par estratégico con experiencia en productos digitales complejos. Revisión de roadmap, validación de decisiones, perspectiva externa.",
+      "Para equipos que necesitan un par estratégico en sostenibilidad, datos u operaciones. Validación de decisiones, revisión de procesos, perspectiva externa.",
     benefit: "Perspectiva externa cuando el equipo está demasiado adentro.",
   },
 ];
