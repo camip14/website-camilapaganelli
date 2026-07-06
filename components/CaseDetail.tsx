@@ -29,15 +29,15 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
           fontSize: "0.68rem",
           textTransform: "uppercase",
           letterSpacing: "0.12em",
-          color: "var(--warm-gray)",
+          color: "var(--muted)",
           display: "inline-block",
           marginBottom: "2rem",
         }}
         onMouseEnter={(e) =>
-          ((e.currentTarget as HTMLAnchorElement).style.color = "var(--ink)")
+          ((e.currentTarget as HTMLAnchorElement).style.color = "var(--primary)")
         }
         onMouseLeave={(e) =>
-          ((e.currentTarget as HTMLAnchorElement).style.color = "var(--warm-gray)")
+          ((e.currentTarget as HTMLAnchorElement).style.color = "var(--muted)")
         }
       >
         ← Todos los casos
@@ -54,9 +54,9 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
             textTransform: "uppercase",
             letterSpacing: "0.1em",
             padding: "0.25rem 0.6rem",
-            border: "0.5px solid var(--forest)",
-            backgroundColor: "rgba(26, 58, 42, 0.06)",
-            color: "var(--forest)",
+            border: "0.5px solid var(--sage)",
+            backgroundColor: "rgba(143, 175, 138, 0.08)",
+            color: "var(--sage)",
             borderRadius: "2px",
             display: "inline-block",
             marginBottom: "1rem",
@@ -72,7 +72,7 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
             fontSize: "0.68rem",
             textTransform: "uppercase",
             letterSpacing: "0.12em",
-            color: "var(--forest-mid)",
+            color: "var(--sage)",
             marginBottom: "0.75rem",
           }}
         >
@@ -86,7 +86,7 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
             fontSize: "clamp(2rem, 4.5vw, 3.2rem)",
             fontWeight: 300,
             lineHeight: 1.1,
-            color: "var(--ink)",
+            color: "var(--primary)",
             marginBottom: "1rem",
             maxWidth: "36ch",
           }}
@@ -100,7 +100,7 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
             fontFamily: "var(--font-cormorant), serif",
             fontStyle: "italic",
             fontSize: "1.15rem",
-            color: "var(--forest)",
+            color: "var(--sage)",
             lineHeight: 1.5,
             maxWidth: "48ch",
           }}
@@ -116,10 +116,10 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
           display: "flex",
           gap: "3rem",
           padding: "1.5rem 2rem",
-          border: "0.5px solid var(--border-thin)",
+          border: "0.5px solid var(--line)",
           borderRadius: "2px",
           marginBottom: "3rem",
-          backgroundColor: "rgba(26, 58, 42, 0.03)",
+          backgroundColor: "rgba(143, 175, 138, 0.04)",
         }}
         className="metrics-bar"
       >
@@ -130,7 +130,7 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
                 fontFamily: "var(--font-cormorant), serif",
                 fontSize: "2rem",
                 fontWeight: 300,
-                color: "var(--forest)",
+                color: "var(--sage)",
                 lineHeight: 1,
                 marginBottom: "0.3rem",
               }}
@@ -143,7 +143,7 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
                 fontSize: "0.62rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.1em",
-                color: "var(--warm-gray)",
+                color: "var(--muted)",
               }}
             >
               {metric.label}
@@ -172,7 +172,7 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
             {/* Left: label */}
             <div
               style={{
-                borderTop: "0.5px solid var(--border-thin)",
+                borderTop: "0.5px solid var(--line)",
                 paddingTop: "1.5rem",
                 paddingBottom: "1.5rem",
                 paddingRight: "2rem",
@@ -184,7 +184,7 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
                   fontSize: "0.6rem",
                   textTransform: "uppercase",
                   letterSpacing: "0.12em",
-                  color: "var(--forest-mid)",
+                  color: "var(--sage)",
                   marginBottom: "0.4rem",
                 }}
               >
@@ -195,7 +195,7 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
                   fontFamily: "var(--font-cormorant), serif",
                   fontSize: "1.3rem",
                   fontWeight: 400,
-                  color: "var(--ink)",
+                  color: "var(--primary)",
                   fontStyle: "italic",
                 }}
               >
@@ -206,7 +206,7 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
             {/* Right: content */}
             <div
               style={{
-                borderTop: "0.5px solid var(--border-thin)",
+                borderTop: "0.5px solid var(--line)",
                 paddingTop: "1.5rem",
                 paddingBottom: "1.5rem",
                 paddingLeft: "2rem",
@@ -216,7 +216,7 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
                 style={{
                   fontFamily: "var(--font-dm-mono), monospace",
                   fontSize: "0.82rem",
-                  color: block.key === "solution" ? "var(--ink)" : "var(--warm-gray)",
+                  color: block.key === "solution" ? "var(--primary)" : "var(--muted)",
                   lineHeight: 1.85,
                   fontWeight: block.key === "solution" ? 400 : 300,
                 }}
@@ -237,7 +237,7 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
           gap: "0.5rem",
           marginTop: "2.5rem",
           paddingTop: "1.5rem",
-          borderTop: "0.5px solid var(--border-thin)",
+          borderTop: "0.5px solid var(--line)",
         }}
       >
         <span
@@ -246,7 +246,7 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
             fontSize: "0.62rem",
             textTransform: "uppercase",
             letterSpacing: "0.1em",
-            color: "var(--warm-gray)",
+            color: "var(--muted)",
             marginRight: "0.5rem",
             alignSelf: "center",
           }}
@@ -261,8 +261,8 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
               fontSize: "0.62rem",
               letterSpacing: "0.06em",
               padding: "0.25rem 0.6rem",
-              border: "0.5px solid var(--border-thin)",
-              color: "var(--warm-gray)",
+              border: "0.5px solid var(--line)",
+              color: "var(--muted)",
               borderRadius: "2px",
             }}
           >
@@ -277,7 +277,7 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
         style={{
           marginTop: "4rem",
           padding: "2.5rem",
-          border: "0.5px solid var(--border-thin)",
+          border: "0.5px solid var(--line)",
           borderRadius: "2px",
           display: "flex",
           justifyContent: "space-between",
@@ -292,7 +292,7 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
               fontFamily: "var(--font-cormorant), serif",
               fontSize: "1.6rem",
               fontWeight: 300,
-              color: "var(--ink)",
+              color: "var(--primary)",
               marginBottom: "0.4rem",
             }}
           >
@@ -302,36 +302,36 @@ export default function CaseDetail({ caseData }: { caseData: CaseStudy }) {
             style={{
               fontFamily: "var(--font-dm-mono), monospace",
               fontSize: "0.76rem",
-              color: "var(--warm-gray)",
+              color: "var(--muted)",
             }}
           >
             Contame tu situación y vemos cómo puedo ayudarte.
           </p>
         </div>
         <a
-          href="/#contacto"
+          href="/contacto"
           style={{
             fontFamily: "var(--font-dm-mono), monospace",
             fontSize: "0.7rem",
             textTransform: "uppercase",
             letterSpacing: "0.12em",
             padding: "0.75rem 1.4rem",
-            backgroundColor: "var(--forest)",
-            color: "var(--off-white)",
+            backgroundColor: "var(--sage)",
+            color: "var(--bg)",
             borderRadius: "2px",
-            border: "0.5px solid var(--forest)",
+            border: "0.5px solid var(--sage)",
             whiteSpace: "nowrap",
             flexShrink: 0,
           }}
           onMouseEnter={(e) => {
             const el = e.currentTarget as HTMLAnchorElement;
-            el.style.backgroundColor = "var(--ink)";
-            el.style.borderColor = "var(--ink)";
+            el.style.backgroundColor = "var(--primary)";
+            el.style.borderColor = "var(--primary)";
           }}
           onMouseLeave={(e) => {
             const el = e.currentTarget as HTMLAnchorElement;
-            el.style.backgroundColor = "var(--forest)";
-            el.style.borderColor = "var(--forest)";
+            el.style.backgroundColor = "var(--sage)";
+            el.style.borderColor = "var(--sage)";
           }}
         >
           Hablemos →

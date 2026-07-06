@@ -6,16 +6,17 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
-    { label: "Ejes", href: "/#ejes" },
+    { label: "FP&A & BI", href: "/servicios/fp-a-bi" },
+    { label: "ESG", href: "/servicios/esg" },
+    { label: "Automatización", href: "/servicios/automatizacion" },
+    { label: "Sobre mí", href: "/sobre-mi" },
     { label: "Casos", href: "/casos" },
-    { label: "Proceso", href: "/#proceso" },
-    { label: "Sobre mí", href: "/about" },
   ];
 
   return (
     <nav
       style={{
-        borderBottom: "0.5px solid var(--border-thin)",
+        borderBottom: "0.5px solid var(--line)",
       }}
     >
       <div
@@ -35,7 +36,7 @@ export default function Nav() {
             fontFamily: "var(--font-cormorant), serif",
             fontSize: "1.1rem",
             fontWeight: 400,
-            color: "var(--ink)",
+            color: "var(--primary)",
             letterSpacing: "0.01em",
           }}
         >
@@ -60,13 +61,13 @@ export default function Nav() {
                 fontSize: "0.72rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.12em",
-                color: "var(--warm-gray)",
+                color: "var(--muted)",
               }}
               onMouseEnter={(e) =>
-                ((e.currentTarget as HTMLAnchorElement).style.color = "var(--ink)")
+                ((e.currentTarget as HTMLAnchorElement).style.color = "var(--primary)")
               }
               onMouseLeave={(e) =>
-                ((e.currentTarget as HTMLAnchorElement).style.color = "var(--warm-gray)")
+                ((e.currentTarget as HTMLAnchorElement).style.color = "var(--muted)")
               }
             >
               {link.label}
@@ -76,7 +77,7 @@ export default function Nav() {
 
         {/* CTA — oculto en mobile */}
         <a
-          href="#contacto"
+          href="/contacto"
           className="nav-cta"
           style={{
             fontFamily: "var(--font-dm-mono), monospace",
@@ -84,22 +85,22 @@ export default function Nav() {
             textTransform: "uppercase",
             letterSpacing: "0.12em",
             padding: "0.5rem 1.1rem",
-            border: "0.5px solid var(--forest)",
-            color: "var(--forest)",
+            border: "0.5px solid var(--sage)",
+            color: "var(--sage)",
             borderRadius: "2px",
           }}
           onMouseEnter={(e) => {
             const el = e.currentTarget as HTMLAnchorElement;
-            el.style.backgroundColor = "var(--forest)";
-            el.style.color = "var(--off-white)";
+            el.style.backgroundColor = "var(--sage)";
+            el.style.color = "var(--bg)";
           }}
           onMouseLeave={(e) => {
             const el = e.currentTarget as HTMLAnchorElement;
             el.style.backgroundColor = "transparent";
-            el.style.color = "var(--forest)";
+            el.style.color = "var(--sage)";
           }}
         >
-          Trabajemos
+          Contacto
         </a>
 
         {/* Hamburger — visible en mobile */}
@@ -122,7 +123,7 @@ export default function Nav() {
               display: "block",
               width: "22px",
               height: "1px",
-              backgroundColor: "var(--ink)",
+              backgroundColor: "var(--primary)",
               transition: "transform 0.2s ease, opacity 0.2s ease",
               transform: menuOpen ? "translateY(6px) rotate(45deg)" : "none",
             }}
@@ -132,7 +133,7 @@ export default function Nav() {
               display: "block",
               width: "22px",
               height: "1px",
-              backgroundColor: "var(--ink)",
+              backgroundColor: "var(--primary)",
               opacity: menuOpen ? 0 : 1,
             }}
           />
@@ -141,7 +142,7 @@ export default function Nav() {
               display: "block",
               width: "22px",
               height: "1px",
-              backgroundColor: "var(--ink)",
+              backgroundColor: "var(--primary)",
               transform: menuOpen ? "translateY(-6px) rotate(-45deg)" : "none",
             }}
           />
@@ -156,7 +157,7 @@ export default function Nav() {
             display: "none",
             flexDirection: "column",
             padding: "1.5rem 2rem 2rem",
-            borderTop: "0.5px solid var(--border-thin)",
+            borderTop: "0.5px solid var(--line)",
             gap: "1.5rem",
           }}
         >
@@ -170,14 +171,14 @@ export default function Nav() {
                 fontSize: "0.82rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.12em",
-                color: "var(--ink)",
+                color: "var(--primary)",
               }}
             >
               {link.label}
             </a>
           ))}
           <a
-            href="#contacto"
+            href="/contacto"
             onClick={() => setMenuOpen(false)}
             style={{
               fontFamily: "var(--font-dm-mono), monospace",
@@ -185,13 +186,13 @@ export default function Nav() {
               textTransform: "uppercase",
               letterSpacing: "0.12em",
               padding: "0.6rem 1.1rem",
-              border: "0.5px solid var(--forest)",
-              color: "var(--forest)",
+              border: "0.5px solid var(--sage)",
+              color: "var(--sage)",
               borderRadius: "2px",
               alignSelf: "flex-start",
             }}
           >
-            Trabajemos
+            Contacto
           </a>
         </div>
       )}

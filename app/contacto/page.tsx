@@ -1,14 +1,12 @@
 import Nav from "@/components/Nav";
-import Hero from "@/components/Hero";
-import ServiceCards from "@/components/ServiceCards";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
-export default function Home() {
+export default function ContactoPage() {
   return (
     <main className="site-wrapper">
       <Nav />
-      <Hero />
-      <ServiceCards />
+      <Contact />
       <Footer />
     </main>
   );

@@ -19,13 +19,13 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Camila Paganelli — Impacto Sostenible, Inteligencia de Datos, Eficiencia Operativa",
+  title: "Camila Paganelli — FP&A & BI, ESG, Automatización",
   description:
-    "Consultora independiente en sostenibilidad, datos y operaciones. Fractional, proyectos y advisory. Buenos Aires / Bariloche / remoto.",
+    "Consultora independiente en FP&A & BI, ESG y automatización de procesos. Fractional, proyectos y advisory. Bariloche / remoto.",
   openGraph: {
-    title: "Camila Paganelli — Impacto Sostenible, Inteligencia de Datos, Eficiencia Operativa",
+    title: "Camila Paganelli — FP&A & BI, ESG, Automatización",
     description:
-      "Consultora independiente en sostenibilidad, datos y operaciones. Fractional, proyectos y advisory. Buenos Aires / Bariloche / remoto.",
+      "Consultora independiente en FP&A & BI, ESG y automatización de procesos. Fractional, proyectos y advisory. Bariloche / remoto.",
     url: "https://www.camipaganelli.com.ar",
     siteName: "Camila Paganelli",
     locale: "es_AR",
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Camila Paganelli — Impacto Sostenible, Inteligencia de Datos, Eficiencia Operativa",
+    title: "Camila Paganelli — FP&A & BI, ESG, Automatización",
     description:
-      "Consultora independiente en sostenibilidad, datos y operaciones. Fractional, proyectos y advisory. Buenos Aires / Bariloche / remoto.",
+      "Consultora independiente en FP&A & BI, ESG y automatización de procesos. Fractional, proyectos y advisory. Bariloche / remoto.",
   },
 };
 

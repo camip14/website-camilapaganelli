@@ -34,7 +34,7 @@ export default function Contact() {
       style={{
         paddingTop: "4rem",
         paddingBottom: "5rem",
-        borderTop: "0.5px solid var(--border-thin)",
+        borderTop: "0.5px solid var(--line)",
       }}
     >
       <div
@@ -59,7 +59,7 @@ export default function Contact() {
               fontFamily: "var(--font-cormorant), serif",
               fontSize: "2.8rem",
               fontWeight: 300,
-              color: "var(--ink)",
+              color: "var(--primary)",
               lineHeight: 1.1,
             }}
           >
@@ -70,7 +70,7 @@ export default function Contact() {
             style={{
               fontFamily: "var(--font-dm-mono), monospace",
               fontSize: "0.76rem",
-              color: "var(--warm-gray)",
+              color: "var(--muted)",
               lineHeight: 1.75,
               maxWidth: "36ch",
             }}
@@ -89,21 +89,21 @@ export default function Contact() {
               textTransform: "uppercase",
               letterSpacing: "0.15em",
               padding: "0.85rem 1.6rem",
-              backgroundColor: "var(--forest)",
-              color: "var(--off-white)",
+              backgroundColor: "var(--sage)",
+              color: "var(--bg)",
               borderRadius: "2px",
               alignSelf: "flex-start",
-              border: "0.5px solid var(--forest)",
+              border: "0.5px solid var(--sage)",
             }}
             onMouseEnter={(e) => {
               const el = e.currentTarget as HTMLAnchorElement;
-              el.style.backgroundColor = "var(--ink)";
-              el.style.borderColor = "var(--ink)";
+              el.style.backgroundColor = "var(--primary)";
+              el.style.borderColor = "var(--primary)";
             }}
             onMouseLeave={(e) => {
               const el = e.currentTarget as HTMLAnchorElement;
-              el.style.backgroundColor = "var(--forest)";
-              el.style.borderColor = "var(--forest)";
+              el.style.backgroundColor = "var(--sage)";
+              el.style.borderColor = "var(--sage)";
             }}
           >
             Hablemos →
@@ -125,7 +125,7 @@ export default function Contact() {
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "center",
-                  borderBottom: "0.5px solid var(--border-thin)",
+                  borderBottom: "0.5px solid var(--line)",
                   padding: "1rem 0",
                   cursor: link.href ? "pointer" : "default",
                 }}
@@ -137,7 +137,7 @@ export default function Contact() {
                     fontSize: "0.68rem",
                     textTransform: "uppercase",
                     letterSpacing: "0.1em",
-                    color: "var(--warm-gray)",
+                    color: "var(--muted)",
                   }}
                 >
                   {link.label}
@@ -147,7 +147,7 @@ export default function Contact() {
                     fontFamily: "var(--font-cormorant), serif",
                     fontStyle: "italic",
                     fontSize: "1rem",
-                    color: "var(--ink)",
+                    color: "var(--primary)",
                     transition: "color 0.2s ease",
                   }}
                   className="contact-link-value"
@@ -167,11 +167,11 @@ export default function Contact() {
                   style={{ color: "inherit", textDecoration: "none" }}
                   onMouseEnter={(e) => {
                     const val = e.currentTarget.querySelector(".contact-link-value") as HTMLElement;
-                    if (val) val.style.color = "var(--forest)";
+                    if (val) val.style.color = "var(--sage)";
                   }}
                   onMouseLeave={(e) => {
                     const val = e.currentTarget.querySelector(".contact-link-value") as HTMLElement;
-                    if (val) val.style.color = "var(--ink)";
+                    if (val) val.style.color = "var(--primary)";
                   }}
                 >
                   {content}

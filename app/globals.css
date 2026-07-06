@@ -3,14 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --ink: #0f0f0e;
-  --off-white: #f5f2ec;
-  --forest: #1a3a2a;
-  --forest-mid: #2d5940;
-  --forest-light: #b8d4c0;
-  --warm-gray: #9a9590;
-  --border-thin: rgba(15, 15, 14, 0.12);
-  --hover-bg: rgba(15, 15, 14, 0.04);
+  --bg: #181917;
+  --surface: #1e1f1d;
+  --line: #2a2b28;
+  --sage: #8faf8a;
+  --amber: #c4956a;
+  --primary: #f0ede6;
+  --muted: #7a7a72;
+  --dim: #3a3a35;
+  --hover-bg: rgba(240, 237, 230, 0.05);
 }
 
 @keyframes marquee {
@@ -42,8 +43,8 @@ html {
 
 body {
   font-family: var(--font-dm-mono), "DM Mono", monospace;
-  background-color: var(--off-white);
-  color: var(--ink);
+  background-color: var(--bg);
+  color: var(--primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -78,7 +79,7 @@ button {
   content: "";
   flex: 1;
   height: 0.5px;
-  background-color: var(--border-thin);
+  background-color: var(--line);
 }
 
 .section-divider span {
@@ -86,6 +87,6 @@ button {
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: var(--warm-gray);
+  color: var(--muted);
   white-space: nowrap;
 }

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-export default function About() {
+export default function SobreMi() {
   return (
     <>
       <Nav />
@@ -22,7 +22,7 @@ export default function About() {
                 fontSize: "0.68rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.15em",
-                color: "var(--forest-mid)",
+                color: "var(--sage)",
                 marginBottom: "0.5rem",
               }}
             >
@@ -35,7 +35,7 @@ export default function About() {
                 fontFamily: "var(--font-dm-mono), monospace",
                 fontSize: "0.82rem",
                 lineHeight: 1.9,
-                color: "var(--ink)",
+                color: "var(--primary)",
               }}
             >
               Empecé cerca del negocio. Mis primeros trabajos fueron como analista: comercial,
@@ -47,13 +47,13 @@ export default function About() {
             {/* Frase destacada */}
             <blockquote
               style={{
-                borderLeft: "2px solid var(--forest)",
+                borderLeft: "2px solid var(--sage)",
                 paddingLeft: "1.5rem",
                 fontFamily: "var(--font-cormorant), serif",
                 fontStyle: "italic",
                 fontSize: "1.1rem",
                 lineHeight: 1.7,
-                color: "var(--ink)",
+                color: "var(--primary)",
                 margin: 0,
               }}
             >
@@ -66,13 +66,14 @@ export default function About() {
                 fontFamily: "var(--font-dm-mono), monospace",
                 fontSize: "0.82rem",
                 lineHeight: 1.9,
-                color: "var(--ink)",
+                color: "var(--primary)",
               }}
             >
-              Con el tiempo ese recorrido me llevó a trabajar en la intersección de tres áreas
-              que raramente aparecen juntas: sostenibilidad, inteligencia de datos y eficiencia
-              operativa. No es una combinación que planifiqué, sino que es el resultado de seguir
-              los problemas que me parecían más interesantes.
+              Trabajé tres años en BBVA Argentina, en análisis de datos, crédito digital y
+              producto. Con el tiempo ese recorrido me llevó a trabajar en la intersección de
+              tres áreas que raramente aparecen juntas: FP&A & BI, ESG y automatización de
+              procesos. No es una combinación que planifiqué, sino el resultado de seguir los
+              problemas que me parecían más interesantes.
             </p>
 
             {/* Párrafo 3 */}
@@ -81,12 +82,13 @@ export default function About() {
                 fontFamily: "var(--font-dm-mono), monospace",
                 fontSize: "0.82rem",
                 lineHeight: 1.9,
-                color: "var(--ink)",
+                color: "var(--primary)",
               }}
             >
-              Me motiva que lo que construimos tenga impacto real. Que un usuario pueda acceder a
-              un servicio que antes le era inaccesible. Que un equipo tome decisiones con menos
-              ruido. Que la tecnología resuelva algo concreto para alguien concreto.
+              Trabajé con Carrefour Argentina y Rapsodia, entre otros clientes. Me motiva que lo
+              que construimos tenga impacto real: que un equipo tome decisiones con menos ruido,
+              que un proceso deje de depender de una persona, que la sustentabilidad se mida en
+              vez de declararse.
             </p>
 
             {/* Párrafo 4 */}
@@ -95,7 +97,7 @@ export default function About() {
                 fontFamily: "var(--font-dm-mono), monospace",
                 fontSize: "0.82rem",
                 lineHeight: 1.9,
-                color: "var(--ink)",
+                color: "var(--primary)",
               }}
             >
               Trabajo explorando antes de concluir: me tomo el tiempo de entender bien el
@@ -103,10 +105,10 @@ export default function About() {
               trabajando con estándares altos.
             </p>
 
-            {/* Bloque: Lo que no soy */}
+            {/* Bloque: Cómo trabajo */}
             <div
               style={{
-                borderTop: "0.5px solid var(--border-thin)",
+                borderTop: "0.5px solid var(--line)",
                 paddingTop: "1.5rem",
                 display: "flex",
                 flexDirection: "column",
@@ -119,7 +121,7 @@ export default function About() {
                   fontSize: "0.68rem",
                   textTransform: "uppercase",
                   letterSpacing: "0.15em",
-                  color: "var(--forest-mid)",
+                  color: "var(--sage)",
                 }}
               >
                 Cómo trabajo
@@ -129,11 +131,12 @@ export default function About() {
                   fontFamily: "var(--font-dm-mono), monospace",
                   fontSize: "0.82rem",
                   lineHeight: 1.9,
-                  color: "var(--warm-gray)",
+                  color: "var(--muted)",
                 }}
               >
                 Me integro al trabajo de cada equipo con criterio propio. Pienso soluciones a
-                medida, para implementar la correcta en conjunto.
+                medida, para implementar la correcta en conjunto. Desafío primero, ejecuto
+                después.
               </p>
             </div>
           </div>

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer
       style={{
-        borderTop: "0.5px solid var(--border-thin)",
+        borderTop: "0.5px solid var(--line)",
         paddingTop: "1.5rem",
         paddingBottom: "1.5rem",
       }}
@@ -24,28 +24,40 @@ export default function Footer() {
               fontFamily: "var(--font-dm-mono), monospace",
               fontSize: "0.65rem",
               letterSpacing: "0.1em",
-              color: "var(--warm-gray)",
+              color: "var(--muted)",
             }}
           >
             © 2026 · Camila Paganelli
           </p>
           <a
-            href="/about"
+            href="/sobre-mi"
             style={{
               fontFamily: "var(--font-dm-mono), monospace",
               fontSize: "0.65rem",
               letterSpacing: "0.1em",
-              color: "var(--warm-gray)",
+              color: "var(--muted)",
               textDecoration: "none",
             }}
             onMouseEnter={(e) =>
-              ((e.currentTarget as HTMLAnchorElement).style.color = "var(--ink)")
+              ((e.currentTarget as HTMLAnchorElement).style.color = "var(--primary)")
             }
             onMouseLeave={(e) =>
-              ((e.currentTarget as HTMLAnchorElement).style.color = "var(--warm-gray)")
+              ((e.currentTarget as HTMLAnchorElement).style.color = "var(--muted)")
             }
           >
             Sobre mí
+          </a>
+          <a
+            href="https://contable.camipaganelli.com.ar"
+            style={{
+              fontFamily: "var(--font-dm-mono), monospace",
+              fontSize: "0.65rem",
+              letterSpacing: "0.1em",
+              color: "var(--amber)",
+              textDecoration: "underline",
+            }}
+          >
+            Soporte contable →
           </a>
         </div>
         <p
@@ -53,10 +65,10 @@ export default function Footer() {
             fontFamily: "var(--font-dm-mono), monospace",
             fontSize: "0.65rem",
             letterSpacing: "0.1em",
-            color: "var(--warm-gray)",
+            color: "var(--muted)",
           }}
         >
-          Sostenibilidad · Datos · Operaciones · Argentina
+          FP&A & BI · ESG · Automatización · Argentina
         </p>
       </div>
 
