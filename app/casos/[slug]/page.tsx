@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: Props) {
   if (!caseData) return { title: "Caso no encontrado" };
 
   return {
-    title: `${caseData.title} — Camila Paganelli`,
-    description: caseData.subtitle,
+    title: `${caseData.title.es} — Camila Paganelli`,
+    description: caseData.subtitle.es,
   };
 }
 

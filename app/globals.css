@@ -3,15 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --bg: #181917;
-  --surface: #1e1f1d;
-  --line: #2a2b28;
-  --sage: #8faf8a;
-  --amber: #c4956a;
-  --primary: #f0ede6;
-  --muted: #7a7a72;
-  --dim: #3a3a35;
-  --hover-bg: rgba(240, 237, 230, 0.05);
+  --bg: #faf9f5;
+  --surface: #f2f0e9;
+  --line: #e4e0d4;
+  --sage: #5f7f58;
+  --amber: #a8672e;
+  --primary: #1a1a17;
+  --muted: #63645c;
+  --dim: #cfcabb;
+  --sage-tint: rgba(95, 127, 88, 0.08);
+  --hover-bg: rgba(26, 26, 23, 0.04);
+
+  --dark-bg: #201f1c;
+  --dark-primary: #f3f1ea;
+  --dark-muted: #a39e8f;
+  --dark-line: #3a382f;
 }
 
 @keyframes marquee {
@@ -42,7 +48,7 @@ html {
 }
 
 body {
-  font-family: var(--font-dm-mono), "DM Mono", monospace;
+  font-family: var(--font-sans-ui), "Montserrat", system-ui, sans-serif;
   background-color: var(--bg);
   color: var(--primary);
   -webkit-font-smoothing: antialiased;
@@ -83,7 +89,7 @@ button {
 }
 
 .section-divider span {
-  font-family: var(--font-dm-mono), monospace;
+  font-family: var(--font-sans-ui), monospace;
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;

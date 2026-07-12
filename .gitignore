@@ -16,3 +16,6 @@ npm-debug.log*
 
 # vercel
 .vercel
+
+# typescript
+*.tsbuildinfo

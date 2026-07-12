@@ -1,16 +1,20 @@
 "use client";
 
 import { useState } from "react";
+import { useLanguage, common } from "@/lib/language";
+import LanguageToggle from "@/components/LanguageToggle";
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { lang } = useLanguage();
 
   const links = [
-    { label: "FP&A & BI", href: "/servicios/fp-a-bi" },
-    { label: "ESG", href: "/servicios/esg" },
-    { label: "Automatización", href: "/servicios/automatizacion" },
-    { label: "Sobre mí", href: "/sobre-mi" },
-    { label: "Casos", href: "/casos" },
+    { label: { es: "FP&A & BI", en: "FP&A & BI" }, href: "/servicios/fp-a-bi" },
+    { label: { es: "ESG", en: "ESG" }, href: "/servicios/esg" },
+    { label: { es: "Automatización", en: "Automation" }, href: "/servicios/automatizacion" },
+    { label: { es: "Sobre mí", en: "About" }, href: "/sobre-mi" },
+    { label: { es: "Casos", en: "Case Studies" }, href: "/casos" },
+    { label: common.cv, href: "/cv" },
   ];
 
   return (
@@ -27,17 +31,19 @@ export default function Nav() {
           justifyContent: "space-between",
           paddingTop: "1.5rem",
           paddingBottom: "1.5rem",
+          gap: "1.5rem",
         }}
       >
         {/* Logo */}
         <a
           href="/"
           style={{
-            fontFamily: "var(--font-cormorant), serif",
+            fontFamily: "var(--font-serif-display), serif",
             fontSize: "1.1rem",
             fontWeight: 400,
             color: "var(--primary)",
             letterSpacing: "0.01em",
+            flexShrink: 0,
           }}
         >
           Camila Paganelli
@@ -48,8 +54,10 @@ export default function Nav() {
           className="nav-links"
           style={{
             display: "flex",
-            gap: "2rem",
+            gap: "1.75rem",
             alignItems: "center",
+            flex: 1,
+            justifyContent: "center",
           }}
         >
           {links.map((link) => (
@@ -57,11 +65,12 @@ export default function Nav() {
               key={link.href}
               href={link.href}
               style={{
-                fontFamily: "var(--font-dm-mono), monospace",
+                fontFamily: "var(--font-sans-ui), sans-serif",
                 fontSize: "0.72rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.12em",
                 color: "var(--muted)",
+                whiteSpace: "nowrap",
               }}
               onMouseEnter={(e) =>
                 ((e.currentTarget as HTMLAnchorElement).style.color = "var(--primary)")
@@ -70,38 +79,41 @@ export default function Nav() {
                 ((e.currentTarget as HTMLAnchorElement).style.color = "var(--muted)")
               }
             >
-              {link.label}
+              {link.label[lang]}
             </a>
           ))}
         </div>
 
-        {/* CTA — oculto en mobile */}
-        <a
-          href="/contacto"
-          className="nav-cta"
-          style={{
-            fontFamily: "var(--font-dm-mono), monospace",
-            fontSize: "0.72rem",
-            textTransform: "uppercase",
-            letterSpacing: "0.12em",
-            padding: "0.5rem 1.1rem",
-            border: "0.5px solid var(--sage)",
-            color: "var(--sage)",
-            borderRadius: "2px",
-          }}
-          onMouseEnter={(e) => {
-            const el = e.currentTarget as HTMLAnchorElement;
-            el.style.backgroundColor = "var(--sage)";
-            el.style.color = "var(--bg)";
-          }}
-          onMouseLeave={(e) => {
-            const el = e.currentTarget as HTMLAnchorElement;
-            el.style.backgroundColor = "transparent";
-            el.style.color = "var(--sage)";
-          }}
-        >
-          Contacto
-        </a>
+        {/* CTA + toggle — ocultos en mobile */}
+        <div className="nav-cta" style={{ display: "flex", alignItems: "center", gap: "0.75rem", flexShrink: 0 }}>
+          <LanguageToggle />
+          <a
+            href="/contacto"
+            style={{
+              fontFamily: "var(--font-sans-ui), sans-serif",
+              fontSize: "0.72rem",
+              textTransform: "uppercase",
+              letterSpacing: "0.12em",
+              padding: "0.5rem 1.1rem",
+              border: "0.5px solid var(--sage)",
+              color: "var(--sage)",
+              borderRadius: "2px",
+              whiteSpace: "nowrap",
+            }}
+            onMouseEnter={(e) => {
+              const el = e.currentTarget as HTMLAnchorElement;
+              el.style.backgroundColor = "var(--sage)";
+              el.style.color = "var(--bg)";
+            }}
+            onMouseLeave={(e) => {
+              const el = e.currentTarget as HTMLAnchorElement;
+              el.style.backgroundColor = "transparent";
+              el.style.color = "var(--sage)";
+            }}
+          >
+            {common.contacto[lang]}
+          </a>
+        </div>
 
         {/* Hamburger — visible en mobile */}
         <button
@@ -167,38 +179,40 @@ export default function Nav() {
               href={link.href}
               onClick={() => setMenuOpen(false)}
               style={{
-                fontFamily: "var(--font-dm-mono), monospace",
+                fontFamily: "var(--font-sans-ui), sans-serif",
                 fontSize: "0.82rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.12em",
                 color: "var(--primary)",
               }}
             >
-              {link.label}
+              {link.label[lang]}
             </a>
           ))}
-          <a
-            href="/contacto"
-            onClick={() => setMenuOpen(false)}
-            style={{
-              fontFamily: "var(--font-dm-mono), monospace",
-              fontSize: "0.72rem",
-              textTransform: "uppercase",
-              letterSpacing: "0.12em",
-              padding: "0.6rem 1.1rem",
-              border: "0.5px solid var(--sage)",
-              color: "var(--sage)",
-              borderRadius: "2px",
-              alignSelf: "flex-start",
-            }}
-          >
-            Contacto
-          </a>
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+            <LanguageToggle />
+            <a
+              href="/contacto"
+              onClick={() => setMenuOpen(false)}
+              style={{
+                fontFamily: "var(--font-sans-ui), sans-serif",
+                fontSize: "0.72rem",
+                textTransform: "uppercase",
+                letterSpacing: "0.12em",
+                padding: "0.6rem 1.1rem",
+                border: "0.5px solid var(--sage)",
+                color: "var(--sage)",
+                borderRadius: "2px",
+              }}
+            >
+              {common.contacto[lang]}
+            </a>
+          </div>
         </div>
       )}
 
       <style jsx>{`
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
           .nav-links,
           .nav-cta {
             display: none !important;

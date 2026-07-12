@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, DM_Mono } from "next/font/google";
+import { Crimson_Text, Montserrat } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/lib/language";
 
-const cormorantGaramond = Cormorant_Garamond({
+const crimsonText = Crimson_Text({
   subsets: ["latin"],
-  weight: ["300", "400", "600"],
+  weight: ["400", "600"],
   style: ["normal", "italic"],
-  variable: "--font-cormorant",
+  variable: "--font-serif-display",
   display: "swap",
 });
 
-const dmMono = DM_Mono({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal"],
-  variable: "--font-dm-mono",
+  variable: "--font-sans-ui",
   display: "swap",
 });
 
@@ -45,11 +46,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${cormorantGaramond.variable} ${dmMono.variable}`}>
+    <html lang="es" className={`${crimsonText.variable} ${montserrat.variable}`}>
       <head>
         <meta charSet="UTF-8" />
       </head>
-      <body>{children}</body>
+      <body>
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   );
 }

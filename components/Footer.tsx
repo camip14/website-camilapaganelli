@@ -1,6 +1,15 @@
 "use client";
 
+import { useLanguage } from "@/lib/language";
+
+const copy = {
+  sobreMi: { es: "Sobre mí", en: "About" },
+  soporteContable: { es: "Soporte contable →", en: "Accounting support →" },
+  tagline: { es: "FP&A & BI · ESG · Automatización · Argentina", en: "FP&A & BI · ESG · Automation · Argentina" },
+};
+
 export default function Footer() {
+  const { lang } = useLanguage();
   return (
     <footer
       style={{
@@ -21,7 +30,7 @@ export default function Footer() {
         <div style={{ display: "flex", alignItems: "center", gap: "1.2rem" }} className="footer-left">
           <p
             style={{
-              fontFamily: "var(--font-dm-mono), monospace",
+              fontFamily: "var(--font-sans-ui), monospace",
               fontSize: "0.65rem",
               letterSpacing: "0.1em",
               color: "var(--muted)",
@@ -32,7 +41,7 @@ export default function Footer() {
           <a
             href="/sobre-mi"
             style={{
-              fontFamily: "var(--font-dm-mono), monospace",
+              fontFamily: "var(--font-sans-ui), monospace",
               fontSize: "0.65rem",
               letterSpacing: "0.1em",
               color: "var(--muted)",
@@ -45,30 +54,30 @@ export default function Footer() {
               ((e.currentTarget as HTMLAnchorElement).style.color = "var(--muted)")
             }
           >
-            Sobre mí
+            {copy.sobreMi[lang]}
           </a>
           <a
             href="https://contable.camipaganelli.com.ar"
             style={{
-              fontFamily: "var(--font-dm-mono), monospace",
+              fontFamily: "var(--font-sans-ui), monospace",
               fontSize: "0.65rem",
               letterSpacing: "0.1em",
               color: "var(--amber)",
               textDecoration: "underline",
             }}
           >
-            Soporte contable →
+            {copy.soporteContable[lang]}
           </a>
         </div>
         <p
           style={{
-            fontFamily: "var(--font-dm-mono), monospace",
+            fontFamily: "var(--font-sans-ui), monospace",
             fontSize: "0.65rem",
             letterSpacing: "0.1em",
             color: "var(--muted)",
           }}
         >
-          FP&A & BI · ESG · Automatización · Argentina
+          {copy.tagline[lang]}
         </p>
       </div>
 

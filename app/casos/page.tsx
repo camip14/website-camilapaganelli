@@ -3,9 +3,21 @@
 import { motion } from "framer-motion";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { cases } from "@/data/cases";
+import { useLanguage } from "@/lib/language";
+import { cases, ejeLabel } from "@/data/cases";
+
+const copy = {
+  kicker: { es: "Casos de éxito", en: "Case studies" },
+  title: { es: "Resultados que hablan.", en: "Results that speak for themselves." },
+  intro: {
+    es: "Cada proyecto tiene un contexto, un problema concreto y una solución medible.",
+    en: "Every project has a context, a concrete problem, and a measurable solution.",
+  },
+};
 
 export default function CasosPage() {
+  const { lang } = useLanguage();
+
   return (
     <>
       <Nav />
@@ -14,7 +26,7 @@ export default function CasosPage() {
           <div style={{ marginBottom: "3rem" }}>
             <p
               style={{
-                fontFamily: "var(--font-dm-mono), monospace",
+                fontFamily: "var(--font-sans-ui), monospace",
                 fontSize: "0.68rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.15em",
@@ -22,30 +34,30 @@ export default function CasosPage() {
                 marginBottom: "0.75rem",
               }}
             >
-              Casos de éxito
+              {copy.kicker[lang]}
             </p>
             <h1
               style={{
-                fontFamily: "var(--font-cormorant), serif",
+                fontFamily: "var(--font-serif-display), serif",
                 fontSize: "clamp(2.4rem, 5vw, 3.6rem)",
-                fontWeight: 300,
+                fontWeight: 400,
                 lineHeight: 1.1,
                 color: "var(--primary)",
                 marginBottom: "1rem",
               }}
             >
-              Resultados que hablan.
+              {copy.title[lang]}
             </h1>
             <p
               style={{
-                fontFamily: "var(--font-dm-mono), monospace",
+                fontFamily: "var(--font-sans-ui), monospace",
                 fontSize: "0.82rem",
                 color: "var(--muted)",
                 lineHeight: 1.7,
                 maxWidth: "52ch",
               }}
             >
-              Cada proyecto tiene un contexto, un problema concreto y una solución medible.
+              {copy.intro[lang]}
             </p>
           </div>
 
@@ -76,25 +88,25 @@ export default function CasosPage() {
               >
                 <span
                   style={{
-                    fontFamily: "var(--font-dm-mono), monospace",
+                    fontFamily: "var(--font-sans-ui), monospace",
                     fontSize: "0.58rem",
                     textTransform: "uppercase",
                     letterSpacing: "0.1em",
                     padding: "0.2rem 0.5rem",
                     border: "0.5px solid var(--sage)",
-                    backgroundColor: "rgba(143, 175, 138, 0.08)",
+                    backgroundColor: "var(--sage-tint)",
                     color: "var(--sage)",
                     borderRadius: "2px",
                     alignSelf: "flex-start",
                     marginBottom: "1rem",
                   }}
                 >
-                  {caseItem.ejeLabel}
+                  {ejeLabel(caseItem.eje, lang)}
                 </span>
 
                 <p
                   style={{
-                    fontFamily: "var(--font-dm-mono), monospace",
+                    fontFamily: "var(--font-sans-ui), monospace",
                     fontSize: "0.62rem",
                     textTransform: "uppercase",
                     letterSpacing: "0.1em",
@@ -102,12 +114,12 @@ export default function CasosPage() {
                     marginBottom: "0.6rem",
                   }}
                 >
-                  {caseItem.companyType} · {caseItem.period}
+                  {caseItem.companyType[lang]} · {caseItem.period[lang]}
                 </p>
 
                 <h2
                   style={{
-                    fontFamily: "var(--font-cormorant), serif",
+                    fontFamily: "var(--font-serif-display), serif",
                     fontSize: "1.4rem",
                     fontWeight: 400,
                     color: "var(--primary)",
@@ -115,12 +127,12 @@ export default function CasosPage() {
                     marginBottom: "0.75rem",
                   }}
                 >
-                  {caseItem.title}
+                  {caseItem.title[lang]}
                 </h2>
 
                 <p
                   style={{
-                    fontFamily: "var(--font-dm-mono), monospace",
+                    fontFamily: "var(--font-sans-ui), monospace",
                     fontSize: "0.76rem",
                     color: "var(--muted)",
                     lineHeight: 1.7,
@@ -128,17 +140,17 @@ export default function CasosPage() {
                     flex: 1,
                   }}
                 >
-                  {caseItem.description}
+                  {caseItem.description[lang]}
                 </p>
 
                 <div style={{ display: "flex", gap: "1.5rem" }}>
                   {caseItem.metrics.map((metric) => (
-                    <div key={metric.label}>
+                    <div key={metric.label.es}>
                       <p
                         style={{
-                          fontFamily: "var(--font-cormorant), serif",
+                          fontFamily: "var(--font-serif-display), serif",
                           fontSize: "1.6rem",
-                          fontWeight: 300,
+                          fontWeight: 400,
                           color: "var(--sage)",
                           lineHeight: 1,
                           marginBottom: "0.2rem",
@@ -148,14 +160,14 @@ export default function CasosPage() {
                       </p>
                       <p
                         style={{
-                          fontFamily: "var(--font-dm-mono), monospace",
+                          fontFamily: "var(--font-sans-ui), monospace",
                           fontSize: "0.58rem",
                           textTransform: "uppercase",
                           letterSpacing: "0.1em",
                           color: "var(--muted)",
                         }}
                       >
-                        {metric.label}
+                        {metric.label[lang]}
                       </p>
                     </div>
                   ))}

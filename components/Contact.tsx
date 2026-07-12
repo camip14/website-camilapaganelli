@@ -2,31 +2,42 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { useLanguage } from "@/lib/language";
 
 const contactLinks = [
   {
-    label: "LinkedIn",
-    value: "linkedin.com/in/cami-paganelli",
+    label: { es: "LinkedIn", en: "LinkedIn" },
+    value: { es: "linkedin.com/in/cami-paganelli", en: "linkedin.com/in/cami-paganelli" },
     href: "https://www.linkedin.com/in/cami-paganelli/",
     newTab: true,
   },
   {
-    label: "Email",
-    value: "camipaganelli@gmail.com",
+    label: { es: "Email", en: "Email" },
+    value: { es: "camipaganelli@gmail.com", en: "camipaganelli@gmail.com" },
     href: "mailto:camipaganelli@gmail.com",
     newTab: false,
   },
   {
-    label: "Idioma",
-    value: "Español · English",
+    label: { es: "Idioma", en: "Language" },
+    value: { es: "Español · English", en: "English · Español" },
     href: null,
     newTab: false,
   },
 ];
 
+const copy = {
+  title: { es: "El primer paso es una conversación.", en: "The first step is a conversation." },
+  text: {
+    es: "Abierta a roles fractional, proyectos acotados y advisory. Si algo de lo que leíste resuena, agendá una llamada.",
+    en: "Open to fractional roles, defined-scope projects, and advisory work. If something you read resonates, book a call.",
+  },
+  cta: { es: "Hablemos →", en: "Let's talk →" },
+};
+
 export default function Contact() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const { lang } = useLanguage();
 
   return (
     <section
@@ -56,27 +67,26 @@ export default function Contact() {
         >
           <h2
             style={{
-              fontFamily: "var(--font-cormorant), serif",
+              fontFamily: "var(--font-serif-display), serif",
               fontSize: "2.8rem",
               fontWeight: 300,
               color: "var(--primary)",
               lineHeight: 1.1,
             }}
           >
-            El primer paso es una conversación.
+            {copy.title[lang]}
           </h2>
 
           <p
             style={{
-              fontFamily: "var(--font-dm-mono), monospace",
+              fontFamily: "var(--font-sans-ui), monospace",
               fontSize: "0.76rem",
               color: "var(--muted)",
               lineHeight: 1.75,
               maxWidth: "36ch",
             }}
           >
-            Abierta a roles fractional, proyectos acotados y advisory. Si algo de lo que
-            leíste resuena, agendá una llamada.
+            {copy.text[lang]}
           </p>
 
           <a
@@ -84,7 +94,7 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              fontFamily: "var(--font-dm-mono), monospace",
+              fontFamily: "var(--font-sans-ui), monospace",
               fontSize: "0.7rem",
               textTransform: "uppercase",
               letterSpacing: "0.15em",
@@ -106,7 +116,7 @@ export default function Contact() {
               el.style.borderColor = "var(--sage)";
             }}
           >
-            Hablemos →
+            {copy.cta[lang]}
           </a>
         </motion.div>
 
@@ -120,7 +130,7 @@ export default function Contact() {
           {contactLinks.map((link, i) => {
             const content = (
               <div
-                key={link.label}
+                key={link.label.es}
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
@@ -133,18 +143,18 @@ export default function Contact() {
               >
                 <span
                   style={{
-                    fontFamily: "var(--font-dm-mono), monospace",
+                    fontFamily: "var(--font-sans-ui), monospace",
                     fontSize: "0.68rem",
                     textTransform: "uppercase",
                     letterSpacing: "0.1em",
                     color: "var(--muted)",
                   }}
                 >
-                  {link.label}
+                  {link.label[lang]}
                 </span>
                 <span
                   style={{
-                    fontFamily: "var(--font-cormorant), serif",
+                    fontFamily: "var(--font-serif-display), serif",
                     fontStyle: "italic",
                     fontSize: "1rem",
                     color: "var(--primary)",
@@ -152,7 +162,7 @@ export default function Contact() {
                   }}
                   className="contact-link-value"
                 >
-                  {link.value}
+                  {link.value[lang]}
                 </span>
               </div>
             );
@@ -160,7 +170,7 @@ export default function Contact() {
             if (link.href) {
               return (
                 <a
-                  key={link.label}
+                  key={link.label.es}
                   href={link.href}
                   target={link.newTab ? "_blank" : undefined}
                   rel={link.newTab ? "noopener noreferrer" : undefined}
