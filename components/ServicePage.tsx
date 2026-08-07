@@ -44,6 +44,9 @@ export default function ServicePage({ slug }: { slug: ServiceContent["slug"] }) 
   const service = getServiceBySlug(slug);
   if (!service) return null;
 
+  const accent = service.accent === "amber" ? "var(--amber)" : "var(--sage)";
+  const accentTint = service.accent === "amber" ? "var(--amber-tint)" : "var(--sage-tint)";
+
   return (
     <>
       <Nav />
@@ -55,7 +58,7 @@ export default function ServicePage({ slug }: { slug: ServiceContent["slug"] }) 
               fontSize: "0.7rem",
               textTransform: "uppercase",
               letterSpacing: "0.14em",
-              color: "var(--sage)",
+              color: accent,
               marginBottom: "1rem",
             }}
           >
@@ -83,6 +86,24 @@ export default function ServicePage({ slug }: { slug: ServiceContent["slug"] }) 
           >
             {service.intro[lang]}
           </p>
+
+          {service.note && (
+            <p
+              style={{
+                fontFamily: "var(--font-sans-ui), monospace",
+                fontSize: "0.8rem",
+                lineHeight: 1.75,
+                color: "var(--primary)",
+                marginTop: "1.5rem",
+                padding: "1.25rem 1.5rem",
+                border: `0.5px solid ${accent}`,
+                backgroundColor: accentTint,
+                borderRadius: "2px",
+              }}
+            >
+              {service.note[lang]}
+            </p>
+          )}
         </div>
 
         <div
@@ -102,7 +123,7 @@ export default function ServicePage({ slug }: { slug: ServiceContent["slug"] }) 
                 fontSize: "0.68rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.15em",
-                color: "var(--sage)",
+                color: accent,
                 marginBottom: "1rem",
               }}
             >
@@ -134,7 +155,7 @@ export default function ServicePage({ slug }: { slug: ServiceContent["slug"] }) 
                 fontSize: "0.68rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.15em",
-                color: "var(--sage)",
+                color: accent,
                 marginBottom: "1rem",
               }}
             >
@@ -167,7 +188,7 @@ export default function ServicePage({ slug }: { slug: ServiceContent["slug"] }) 
               fontSize: "0.68rem",
               textTransform: "uppercase",
               letterSpacing: "0.15em",
-              color: "var(--sage)",
+              color: accent,
               marginBottom: "2rem",
             }}
           >
@@ -180,7 +201,7 @@ export default function ServicePage({ slug }: { slug: ServiceContent["slug"] }) 
                   style={{
                     fontFamily: "var(--font-serif-display), serif",
                     fontSize: "1.6rem",
-                    color: "var(--sage)",
+                    color: accent,
                     marginBottom: "0.75rem",
                   }}
                 >
@@ -221,10 +242,10 @@ export default function ServicePage({ slug }: { slug: ServiceContent["slug"] }) 
               textTransform: "uppercase",
               letterSpacing: "0.12em",
               padding: "0.85rem 1.8rem",
-              backgroundColor: "var(--sage)",
+              backgroundColor: accent,
               color: "var(--bg)",
               borderRadius: "2px",
-              border: "0.5px solid var(--sage)",
+              border: `0.5px solid ${accent}`,
             }}
           >
             {common.hablemos[lang]}

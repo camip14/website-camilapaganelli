@@ -9,9 +9,7 @@ export default function Nav() {
   const { lang } = useLanguage();
 
   const links = [
-    { label: { es: "FP&A & BI", en: "FP&A & BI" }, href: "/servicios/fp-a-bi" },
-    { label: { es: "ESG", en: "ESG" }, href: "/servicios/esg" },
-    { label: { es: "Automatización", en: "Automation" }, href: "/servicios/automatizacion" },
+    { label: { es: "Servicios", en: "Services" }, href: "/servicios" },
     { label: { es: "Sobre mí", en: "About" }, href: "/sobre-mi" },
     { label: { es: "Casos", en: "Case Studies" }, href: "/casos" },
     { label: common.cv, href: "/cv" },

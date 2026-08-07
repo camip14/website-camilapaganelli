@@ -4,8 +4,10 @@ import { useLanguage } from "@/lib/language";
 
 const copy = {
   sobreMi: { es: "Sobre mí", en: "About" },
-  soporteContable: { es: "Soporte contable →", en: "Accounting support →" },
-  tagline: { es: "FP&A & BI · ESG · Automatización · Argentina", en: "FP&A & BI · ESG · Automation · Argentina" },
+  tagline: {
+    es: "FP&A & BI · ESG · Automatización · Planificación · Argentina",
+    en: "FP&A & BI · ESG · Automation · Planning · Argentina",
+  },
 };
 
 export default function Footer() {
@@ -55,18 +57,6 @@ export default function Footer() {
             }
           >
             {copy.sobreMi[lang]}
-          </a>
-          <a
-            href="https://contable.camipaganelli.com.ar"
-            style={{
-              fontFamily: "var(--font-sans-ui), monospace",
-              fontSize: "0.65rem",
-              letterSpacing: "0.1em",
-              color: "var(--amber)",
-              textDecoration: "underline",
-            }}
-          >
-            {copy.soporteContable[lang]}
           </a>
         </div>
         <p

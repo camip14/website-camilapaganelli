@@ -1,12 +1,16 @@
 import type { LocalizedText } from "@/data/cases";
 
 export interface ServiceContent {
-  slug: "fp-a-bi" | "esg" | "automatizacion";
+  slug: "fp-a-bi" | "esg" | "automatizacion" | "planificacion" | "soporte-contable";
   label: LocalizedText;
   description: LocalizedText;
   intro: LocalizedText;
   incluye: LocalizedText[];
   paraQuienEs: LocalizedText[];
+  /** Disclaimer honesto opcional, se muestra como callout debajo del intro. */
+  note?: LocalizedText;
+  /** Color de acento de la página. Default: sage. */
+  accent?: "sage" | "amber";
 }
 
 export const services: ServiceContent[] = [
@@ -78,6 +82,58 @@ export const services: ServiceContent[] = [
       { es: "Empresas que quieren escalar operaciones sin sumar headcount", en: "Companies that want to scale operations without adding headcount" },
       { es: "Áreas de cobranzas, atención al cliente o back office", en: "Collections, customer service, or back-office teams" },
     ],
+  },
+  {
+    slug: "planificacion",
+    label: { es: "Planificación", en: "Planning" },
+    description: {
+      es: "Planificación de demanda, ventas y finanzas integrada, tipo S&OP: que abastecimiento, comercial y finanzas trabajen sobre el mismo número.",
+      en: "Integrated demand, sales, and financial planning, S&OP-style: supply chain, commercial, and finance working off the same number.",
+    },
+    intro: {
+      es: "Planificación de demanda, ventas y finanzas como un mismo ejercicio, no tres planillas que no se hablan. Trabajo el ciclo completo de planificación — supply chain, comercial y financiera — para que la operación no dependa de improvisar cada mes.",
+      en: "Demand, sales, and financial planning as a single exercise, not three spreadsheets that don't talk to each other. I work the full planning cycle — supply chain, commercial, and financial — so the operation doesn't run on improvising every month.",
+    },
+    incluye: [
+      { es: "Planificación de demanda y abastecimiento (S&OP)", en: "Demand and supply planning (S&OP)" },
+      { es: "Forecast comercial y de ventas", en: "Commercial and sales forecasting" },
+      { es: "Presupuesto y planificación financiera anual", en: "Annual budgeting and financial planning" },
+      { es: "Modelos de escenarios: stock, inversión, capacidad", en: "Scenario models: inventory, investment, capacity" },
+    ],
+    paraQuienEs: [
+      { es: "Empresas con quiebres de stock o sobre-stock recurrentes", en: "Companies with recurring stockouts or overstock" },
+      { es: "Equipos comerciales y de supply chain que planifican por separado", en: "Commercial and supply chain teams that plan separately" },
+      { es: "Organizaciones que arman el presupuesto anual a mano", en: "Organizations that build their annual budget by hand" },
+    ],
+  },
+  {
+    slug: "soporte-contable",
+    label: { es: "Soporte Contable", en: "Accounting Support" },
+    description: {
+      es: "Carga de datos, Excel avanzado y dashboards en Power BI para estudios contables. Soporte operativo, no un servicio de contador.",
+      en: "Data entry, advanced Excel, and Power BI dashboards for accounting firms. Operational support, not an accountant's service.",
+    },
+    intro: {
+      es: "Soporte operativo para estudios contables: carga y organización de datos, armado de planillas y dashboards de seguimiento. Tres años de background en datos en BBVA Argentina, Excel avanzado y Power BI — donde otro soporte junior carga planillas, yo puedo ordenar y visualizar la información para que el estudio la use de verdad.",
+      en: "Operational support for accounting firms: data entry and organization, spreadsheet building, and tracking dashboards. Three years of data background at BBVA Argentina, advanced Excel, and Power BI — where another junior hire just loads spreadsheets, I can organize and visualize the information so the firm actually uses it.",
+    },
+    note: {
+      es: "Arranco la carrera de Contador Público en agosto de 2026. No tengo matrícula ni puedo firmar documentación formal — esto no es un servicio de contador, es soporte operativo para el trabajo que un estudio contable necesita resolver todos los días.",
+      en: "I'm starting my Certified Public Accountant degree in August 2026. I don't hold a license and can't sign formal documentation — this isn't an accountant's service, it's operational support for the work an accounting firm needs to handle every day.",
+    },
+    // TODO(Cami): validar esta lista antes de publicar — ¿tomás todas estas tareas? ¿falta algo?
+    incluye: [
+      { es: "Carga y organización de datos contables", en: "Accounting data entry and organization" },
+      { es: "Armado de planillas de Excel avanzado", en: "Advanced Excel spreadsheet building" },
+      { es: "Dashboards de seguimiento en Power BI", en: "Tracking dashboards in Power BI" },
+      { es: "Tareas administrativas y de back office", en: "Administrative and back-office tasks" },
+    ],
+    paraQuienEs: [
+      { es: "Estudios contables que necesitan soporte operativo, no otro contador", en: "Accounting firms that need operational support, not another accountant" },
+      { es: "Equipos que cargan datos a mano y quieren pasarlo a dashboards", en: "Teams that enter data by hand and want to move it into dashboards" },
+      { es: "Estudios que recién empiezan a ordenar su información en Excel/Power BI", en: "Firms just starting to organize their information in Excel/Power BI" },
+    ],
+    accent: "amber",
   },
 ];
 
