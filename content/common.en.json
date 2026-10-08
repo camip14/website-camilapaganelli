@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "empresas": "Companies",
+    "pymes": "Small businesses",
+    "emprendimientos": "Startups",
+    "sobreMi": "About"
+  },
+  "navLabel": "Main navigation",
+  "openMenu": "Menu",
+  "closeMenu": "Close",
+  "skipToContent": "Skip to content",
+  "backHome": "← Back to home",
+  "switchLanguage": "Switch language",
+  "footer": {
+    "privacy": "Privacy",
+    "location": "Bariloche, Argentina",
+    "rights": "© 2026 Cami Paganelli"
+  },
+  "notFound": {
+    "title": "This page doesn't exist.",
+    "back": "Back to home"
+  }
+}

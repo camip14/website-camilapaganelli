@@ -1,0 +1,122 @@
+{
+  "variant": "full",
+  "meta": {
+    "title": "Finanzas para emprendimientos | Sesión Claridad en Bariloche",
+    "description": "Si recién arrancás, conocé tus costos reales, tu precio mínimo y tu punto de equilibrio. Sesión Claridad y acompañamiento de 45 días."
+  },
+  "ctas": [
+    { "kind": "whatsapp", "label": "Escribime por WhatsApp" },
+    { "kind": "booking", "label": "Reservá tu Sesión Claridad" },
+    { "kind": "form", "href": "postulacion", "label": "Postulá al programa comunitario" }
+  ],
+  "hero": {
+    "headline": "Tu proyecto recién empieza. Que tus números también arranquen ordenados.",
+    "sub": "Si estás arrancando (un foodtruck, una marca, un servicio), te ayudo a conocer tus costos reales, fijar un precio que no te haga perder y proyectar tu caja desde el primer día."
+  },
+  "beforeAfter": {
+    "title": "De dónde partís y adónde llegás",
+    "start": {
+      "title": "Hoy:",
+      "text": "Empezaste y vendés, pero no sabés si cada venta te deja plata."
+    },
+    "end": {
+      "title": "En 45 días:",
+      "text": "Conocés tu precio mínimo, tu punto de equilibrio y cuánto podés pagarte."
+    }
+  },
+  "session": {
+    "title": "Sesión Claridad (60 a 90 minutos)",
+    "headline": "Salís sabiendo cuánto te deja cada venta y cuántas necesitás por mes para no perder.",
+    "bring": "**Qué traés:** tres datos aproximados de tu producto o servicio principal: a cuánto lo vendés, cuánto te cuestan los insumos por unidad y cuáles son tus gastos fijos del mes. No hace falta tener nada ordenado: alcanza con un cuaderno o lo que tengas.",
+    "take": "**Qué te llevás:** tu *margen por unidad* (cuánto te queda de cada venta para pagar todo lo demás) y tu *punto de equilibrio mensual* (cuántas unidades tenés que vender para no perder plata).",
+    "note": "Son estimaciones iniciales con los datos que traigas. Se afinan con tus números reales durante el acompañamiento.",
+    "exampleLabel": "Ejemplo ilustrativo",
+    "example": "si vendés un combo a $10.000 y entre insumos y packaging te cuesta $4.000, te quedan $6.000 por venta. Si tus gastos fijos son $1.200.000 al mes, necesitás vender 200 combos para empatar.",
+    "price": "**Valor:** Consultá el valor. {{pending:precio.}}"
+  },
+  "accompaniment": {
+    "title": "Acompañamiento de 45 días",
+    "steps": [
+      "**1. Entender.** Revisamos juntos tus costos, tu forma de vender y tus gastos fijos con tus datos reales.",
+      "**2. Poner en limpio.** Armamos tu panel básico de gestión, en tu cuenta y a tu nombre, con tu *estado de resultados de gestión* simplificado y tu *flujo de caja (cashflow)*.",
+      "**3. Decidir.** Calculamos tu precio mínimo, tu caja proyectada y cuánto podés pagarte como dueño sin ahogar el proyecto.",
+      "**4. Acompañar y medir.** Durante 45 días vemos cómo se comporta lo proyectado contra lo real y ajustamos. Cerramos con un informe que muestra qué pasó."
+    ]
+  },
+  "modes": {
+    "title": "Dos formas de trabajar",
+    "items": [
+      "**Juntos:** vos participás de cada paso y vas aprendiendo a leer tus números.",
+      "**De punta a punta:** me ocupo yo y vos recibís lo importante, en claro."
+    ]
+  },
+  "risk": {
+    "title": "Empezá sin riesgo y cómo cuidamos tu información",
+    "paragraphs": [
+      "La Sesión Claridad es de precio cerrado y se descuenta si decidís avanzar. El acompañamiento no tiene permanencia mínima y, al terminar, el panel y los documentos quedan en tu poder.",
+      "Trabajamos solo con lo que decidas compartir. Pedimos exportaciones o accesos de solo lectura, nunca claves bancarias, y firmamos un acuerdo de confidencialidad antes de empezar.",
+      "Si el equipo funciona y querés seguir, lo conversamos y armamos una nueva propuesta para lo que venga."
+    ]
+  },
+  "whyMe": {
+    "title": "Por qué yo",
+    "text": "Trabajé con números y decisiones en organizaciones grandes y ahora lo pongo al servicio de proyectos que recién empiezan. Vivo en Bariloche por elección.",
+    "link": { "kind": "internal", "href": "sobre-mi", "label": "Conocé más sobre mí →" }
+  },
+  "community": {
+    "id": "postulacion",
+    "title": "Programa comunitario de acompañamiento.",
+    "paragraphs": [
+      "Cada trimestre acompañamos entre 3 y 5 proyectos locales durante 45 días. Es un programa de valor simbólico (no es gratuito) pensado para apoyar el crecimiento sano de los primeros años de un proyecto.",
+      "Postulás con un formulario corto y elijo según el momento del proyecto y las ganas de compartir información. A cambio, te pido permiso para documentar tu caso, sin datos sensibles, como aprendizaje para la comunidad."
+    ],
+    "cohort": "{{pending:fecha de apertura de la próxima cohorte}}"
+  },
+  "form": {
+    "title": "Postulación",
+    "fields": [
+      { "id": "proyecto", "label": "Nombre del proyecto", "type": "text", "required": true },
+      { "id": "contacto", "label": "Tu nombre y cómo contactarte (WhatsApp o email)", "type": "text", "required": true },
+      { "id": "rubro", "label": "Rubro", "type": "text" },
+      { "id": "inicio", "label": "Hace cuánto empezó", "type": "text" },
+      {
+        "id": "ventas",
+        "label": "Ventas aproximadas por mes (rangos para elegir, no cifras exactas)",
+        "type": "select",
+        "options": [],
+        "pendingOptions": "los rangos de ventas mensuales para elegir (el documento no los define)"
+      },
+      { "id": "preocupacion", "label": "Qué te preocupa hoy (texto libre)", "type": "textarea" },
+      { "id": "registro", "label": "Si llevás algún registro de ventas y costos", "type": "radio", "options": ["Sí", "No", "A medias"] },
+      { "id": "anonimo", "label": "Aceptás compartir tu caso de forma anonimizada", "type": "radio", "options": ["Sí", "No"] }
+    ],
+    "privacyLabel": "Acepto la",
+    "privacyLink": "política de privacidad",
+    "submit": "Enviar postulación",
+    "sending": "Enviando…",
+    "confirmation": "Gracias. Recibimos tu postulación. {{pending:mensaje de confirmación.}}",
+    "error": "No pudimos enviar tu postulación. Probá de nuevo o escribime por WhatsApp.",
+    "pendingDestination": "{{pending:destino de las respuestas (email o base de datos) y mensaje de confirmación.}}"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Tengo que tener todo ordenado?",
+        "a": "No. Si traés tus datos aproximados, alcanza para empezar."
+      },
+      {
+        "q": "¿Es contabilidad?",
+        "a": "No. Es gestión financiera para decidir. No reemplaza a tu contador."
+      },
+      {
+        "q": "¿Y si no sé cuánto me cuestan mis productos?",
+        "a": "Lo calculamos juntos con uno o dos productos principales. No hace falta tener toda la carta resuelta."
+      },
+      {
+        "q": "¿Cuánto cuesta?",
+        "a": "Consultá el valor por WhatsApp. {{pending:precios.}}"
+      }
+    ]
+  }
+}

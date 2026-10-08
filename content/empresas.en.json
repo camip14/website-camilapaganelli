@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "FP&A, Pricing and Operational Finance | Cami Paganelli",
+    "description": "FP&A, financial modeling, profitability and dashboards for teams that need clear decisions. Fractional, project-based and advisory engagements."
+  },
+  "headerCta": { "kind": "booking", "label": "Book an intro call" },
+  "hero": {
+    "headline": "I look at the numbers and tell you what's happening and what to do about it.",
+    "sub": "FP&A, pricing and operational finance for teams that need clear decisions. Available for fractional, project-based and advisory engagements.",
+    "ctas": [
+      { "kind": "booking", "label": "Book an intro call" },
+      { "kind": "cv", "label": "Download CV" }
+    ]
+  },
+  "beforeAfter": {
+    "title": "From point A to point B",
+    "start": {
+      "title": "Where teams usually start:",
+      "items": [
+        "Reports that arrive late.",
+        "Figures that don't match across areas.",
+        "Decisions made without a forecast."
+      ]
+    },
+    "end": {
+      "title": "Where we get to:",
+      "text": "A single dashboard and a forecast that leadership uses to decide."
+    }
+  },
+  "pillars": {
+    "title": "What I do",
+    "items": [
+      {
+        "question": "What is happening?",
+        "lead": "Understand the numbers.",
+        "text": "P&L, cash flow and management reporting, at the cadence your business needs."
+      },
+      {
+        "question": "What will happen?",
+        "lead": "Plan ahead.",
+        "text": "Budgets, forecasts and scenario models that leadership can actually use."
+      },
+      {
+        "question": "Where do we win and where do we lose?",
+        "lead": "Profitability and pricing.",
+        "text": "Profitability by product, cost structure, pricing, collections and core financial processes."
+      },
+      {
+        "question": "Where are we losing time, money or capacity?",
+        "lead": "Operate better.",
+        "text": "Resource utilization, dashboards and metrics for better decisions, and project coordination across teams so recommendations actually get implemented."
+      }
+    ]
+  },
+  "decision": {
+    "title": "From analysis to decision",
+    "text": "Reports are not the goal. Every engagement ends with a clear recommendation: *this is what's happening, and this is what we should do.*"
+  },
+  "start": {
+    "title": "How we start and when you see first progress",
+    "items": [
+      "**Weeks 1–4: Focused diagnostic.** Fixed scope and fixed price. You get a reading of your current numbers and a prioritized list of improvements.",
+      "**First 30 days after you decide to continue: First dashboard** in use by your team.",
+      "**Months 2–3: Forecast and recommendations** embedded in your regular management cycle."
+    ],
+    "note": "{{pending:la dueña del sitio confirma si los plazos \"2 a 4 semanas\" y \"30 días\" son los que quiere comprometer públicamente.}}"
+  },
+  "ways": {
+    "title": "Ways of working and low risk",
+    "items": [
+      "**Start small:** a focused diagnostic at a fixed price, with no commitment to continue.",
+      "**Fractional:** recurring monthly support.",
+      "**Project-based:** fixed scope and deliverables.",
+      "**Advisory:** by session."
+    ],
+    "closing": "You keep the models, dashboards and documentation we build together. Confidentiality agreement signed before we start."
+  },
+  "connecta": {
+    "id": "conecta",
+    "title": "How I work: the C.O.N.E.C.T.A. model",
+    "intro": "The same sequence shows up in every project, regardless of industry or role.",
+    "steps": [
+      { "letter": "C", "text": "**Comprehend.** I understand how the business works before proposing anything: goals, flows and what information really matters." },
+      { "letter": "O", "text": "**Observe.** I look for relationships between processes, data and people that explain why results look the way they do." },
+      { "letter": "N", "text": "**Navigate complexity.** I bring fragmented information and competing views into one shared picture." },
+      { "letter": "E", "text": "**Strategy.** I connect the analysis to business goals, so decisions are prioritized and aligned." },
+      { "letter": "C", "text": "**Collaborate.** Sustainable change depends on people. I work through dialogue and agreement." },
+      { "letter": "T", "text": "**Transform.** The goal is not a diagnosis but concrete improvement: clearer processes and stronger decisions." },
+      { "letter": "A", "text": "**Add value.** I measure the impact so the value is visible, not assumed." }
+    ]
+  },
+  "esg": {
+    "text": "**Complementary line: ESG and sustainability.** Theoretical grounding in sustainability reporting frameworks (including CSRD), applied as a complement to financial work."
+  },
+  "background": {
+    "title": "Where I've worked, education and tools",
+    "text": "Retail credit products at BBVA Argentina (personal loans, credit cards, mortgages, payroll advance), as Design Lead and senior analyst. Product roles at Leafnoise. {{pending:una línea verificable de escala (equipos, volúmenes o carteras) y años de experiencia.}}",
+    "education": "**Education:** Digital Banking Certification (Universidad Torcuato Di Tella) · Applied Sustainability (Coursera).",
+    "tools": "**Tools:** SQL, Excel, Looker Studio, SAP, Salesforce, MicroStrategy, Teradata, Zapier, Make, N8N, Botmaker."
+  },
+  "casos": { "kind": "casos", "href": "casos", "label": "See business cases" },
+  "finalCta": {
+    "title": "Hiring, or looking for a partner on a specific project?",
+    "ctas": [
+      { "kind": "booking", "label": "Let's talk" },
+      { "kind": "cv", "label": "Download CV" }
+    ]
+  }
+}

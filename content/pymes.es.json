@@ -1,0 +1,106 @@
+{
+  "variant": "full",
+  "meta": {
+    "title": "Negocio Claro | Gestión financiera para pymes en Bariloche",
+    "description": "Ordenamos las finanzas de tu comercio o pyme, armamos tu panel de gestión y un plan a 90 días. Sin jerga y sin planillas eternas."
+  },
+  "ctas": [
+    { "kind": "whatsapp", "label": "Escribime por WhatsApp" },
+    { "kind": "booking", "label": "Reservá tu Sesión Claridad" }
+  ],
+  "hero": {
+    "headline": "Sabé cuánto ganás de verdad y planificá tu año con números.",
+    "sub": "Negocio Claro: ordenamos las finanzas de tu comercio o pyme en Bariloche, armamos tu panel de gestión y un plan a 90 días. Sin jerga y sin planillas eternas."
+  },
+  "problem": {
+    "title": "Vendés, pero no sabés cuánto te queda.",
+    "bullets": [
+      "Decidís mirando el saldo del banco.",
+      "Los meses buenos se van en gastos y los flojos te encuentran sin colchón.",
+      "Los precios se actualizan tarde, o se copian de la competencia.",
+      "La plata del negocio y la tuya están mezcladas."
+    ],
+    "closing": "Lo que no se mide, se escapa. Y se escapa todos los meses."
+  },
+  "beforeAfter": {
+    "title": "De dónde partís y adónde llegás",
+    "start": {
+      "title": "Hoy:",
+      "text": "Vendés, pero no sabés cuánto te queda. Decidís mirando el saldo del banco."
+    },
+    "end": {
+      "title": "A los 90 días:",
+      "text": "Sabés cuánto ganás por producto, a qué precio vender para no perder y cuánta caja necesitás para sostener los meses más flojos de tu rubro."
+    }
+  },
+  "how": {
+    "title": "Cómo trabajamos",
+    "steps": [
+      "**1. Entender.** Empezamos por tu negocio: cómo funciona, qué te preocupa y qué información tenés. Armamos juntos un *estado de resultados de gestión* (cuánto entró, cuánto salió y cuánto te quedó) y un *flujo de caja (cashflow)* de los últimos meses, con 3 hallazgos concretos.",
+      "**2. Poner en limpio.** Construimos tu *panel de gestión*, que se actualiza solo y reúne ventas, costos, gastos fijos, sueldo del dueño y caja. Vive en tu cuenta y es tuyo.",
+      "**3. Decidir.** Calculamos precios por margen y *punto de equilibrio*, proyectamos tu caja a 90 días según el ciclo de tu rubro y definimos qué hacer primero.",
+      "**4. Acompañar y medir.** Durante 90 días revisamos juntos cómo van las decisiones y cerramos con un *informe de impacto* que compara antes y después."
+    ]
+  },
+  "timeline": {
+    "title": "Cuándo ves los primeros avances",
+    "items": [
+      "**Semana 1:** tu primer estado de resultados de gestión.",
+      "**Semana 3:** tu panel funcionando.",
+      "**Mes 2:** precios y proyección de caja.",
+      "**Día 90:** informe de impacto."
+    ],
+    "note": "{{pending:confirmar que estos plazos son los que se quieren comprometer públicamente. Son hipótesis a validar con los primeros clientes.}}"
+  },
+  "modes": {
+    "title": "Dos formas de trabajar, la que te quede cómoda",
+    "items": [
+      "**Juntos.** Vos participás de cada paso, cargamos y revisamos los números a la par y vas aprendiendo a leerlos.",
+      "**De punta a punta.** Me ocupo yo del trabajo y vos recibís resultados claros y una reunión para entenderlos."
+    ],
+    "closing": "Podés empezar de una forma y cambiar a la otra cuando quieras."
+  },
+  "privacy": {
+    "title": "Cómo cuidamos tu información",
+    "text": "Trabajamos solo con lo que decidas compartir. Pedimos exportaciones o accesos de solo lectura, nunca claves bancarias. Tu panel se construye en tu propia cuenta, firmamos un acuerdo de confidencialidad antes de empezar y lo que compartas es tuyo, siempre."
+  },
+  "risk": {
+    "title": "Empezá sin riesgo",
+    "text": "**Empezá por una Sesión Claridad.** Es una primera conversación de trabajo, a precio cerrado, y se descuenta si decidís avanzar. El acompañamiento no tiene permanencia mínima. Al terminar, el panel y los documentos quedan en tu poder.",
+    "price": "**Valor de la Sesión Claridad:** Consultá el valor. {{pending:precio de la Sesión Claridad.}}"
+  },
+  "whoFor": {
+    "title": "Para quién es",
+    "text": "Para negocios que ya venden. No reemplaza a tu contador: trabajamos con él, no en su lugar. Mi trabajo es de gestión, para que decidas. No es contabilidad ni impuestos."
+  },
+  "whyMe": {
+    "title": "Por qué yo",
+    "paragraphs": [
+      "Soy Cami. Vengo de trabajar en organizaciones y proyectos donde la información está dispersa y las decisiones se toman con apuro: producto, procesos, análisis de datos, finanzas y automatización. {{pending:\"Más de X años de experiencia\", con el dato real.}} Mi oficio es ordenar esa información y convertirla en decisiones.",
+      "Además de trabajar en Bariloche, elegí vivir acá: conozco cómo respiran los negocios de la zona, con sus meses fuertes y flojos."
+    ],
+    "casos": { "kind": "casos", "href": "casos", "label": "Ver casos de negocio →" }
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Tengo que saber de números?",
+        "a": "No, y no hace falta que te gusten. Mi trabajo es sacarte ese peso de encima. Si querés entender todo, te lo explico las veces que haga falta, con ejemplos de tu propio negocio y sin apuro. Si preferís no meterte, me ocupo yo y vos solo recibís lo importante, en claro. Hay quienes quieren aprender y quienes quieren dormir tranquilos. Las dos están bien."
+      },
+      {
+        "q": "¿Es contabilidad?",
+        "a": "No. Es gestión financiera para decidir."
+      },
+      {
+        "q": "¿Cuánto tiempo me lleva?",
+        "a": "Depende de cómo elijamos trabajar. Al inicio necesitamos reunir información y conversar: calculá unas 2 o 3 horas tuyas en las primeras dos semanas. Después hay dos caminos. En un proyecto de ordenar y dejar andando, el panel queda funcionando y vos dedicás unos 15 a 30 minutos por semana a mantener lo que no se automatice. En un acompañamiento continuo (fractional), yo me encargo del mantenimiento y vos solo tenés una reunión corta de revisión por semana o por mes, según lo que acordemos."
+      },
+      {
+        "q": "¿Cuánto cuesta?",
+        "a": "Depende del tamaño y la complejidad de tu negocio y de cómo elijamos trabajar. Arrancamos con una Sesión Claridad y, con eso en la mano, te paso un presupuesto cerrado."
+      }
+    ],
+    "note": "{{pending:validar con los primeros clientes los tiempos de la respuesta \"¿Cuánto tiempo me lleva?\" y ajustar el texto con datos reales.}}"
+  }
+}

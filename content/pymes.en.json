@@ -1,0 +1,20 @@
+{
+  "variant": "summary",
+  "meta": {
+    "title": "Negocio Claro | Financial management for small businesses in Bariloche",
+    "description": "We organize your business finances, build your management dashboard and design a 90-day plan."
+  },
+  "hero": {
+    "headline": "Know what you really earn. Plan your year with numbers.",
+    "paragraphs": [
+      "Negocio Claro helps small businesses in Bariloche organize their finances, build a self-updating management dashboard and follow a 90-day plan. We work alongside your accountant, not in place of them. This is financial management, not accounting or tax advice.",
+      "Start with a focused first session, at a fixed price."
+    ]
+  },
+  "ctas": [
+    { "kind": "whatsapp", "label": "Contact via WhatsApp" },
+    { "kind": "booking", "label": "Book a session" }
+  ],
+  "note": "Note: this service is delivered in Spanish. For corporate and fractional work, see",
+  "link": { "kind": "internal", "href": "empresas", "label": "Companies" }
+}

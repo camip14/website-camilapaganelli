@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "FP&A, pricing y finanzas operativas | Cami Paganelli",
+    "description": "FP&A, modelado financiero, rentabilidad y dashboards para equipos que necesitan decisiones claras. Trabajo fractional, por proyecto y de asesoría."
+  },
+  "headerCta": { "kind": "booking", "label": "Reservar una llamada" },
+  "hero": {
+    "headline": "Miro los números y te digo qué está pasando y qué conviene hacer.",
+    "sub": "FP&A, pricing y finanzas operativas para equipos que necesitan decisiones claras. Disponible para trabajo fractional, por proyecto y de asesoría.",
+    "ctas": [
+      { "kind": "booking", "label": "Reservar una llamada" },
+      { "kind": "cv", "label": "Descargar CV" }
+    ]
+  },
+  "beforeAfter": {
+    "title": "Del punto A al punto B",
+    "start": {
+      "title": "Desde dónde suelen partir los equipos:",
+      "items": [
+        "Reportes que llegan tarde.",
+        "Cifras que no coinciden entre áreas.",
+        "Decisiones sin forecast."
+      ]
+    },
+    "end": {
+      "title": "A dónde llegamos:",
+      "text": "Un tablero único y un forecast que el equipo directivo usa para decidir."
+    }
+  },
+  "pillars": {
+    "title": "Qué hago",
+    "items": [
+      {
+        "question": "¿Qué está pasando?",
+        "lead": "Entender los números.",
+        "text": "Estado de resultados (P&L), flujo de caja y reporting a la cadencia que tu negocio necesita."
+      },
+      {
+        "question": "¿Qué va a pasar?",
+        "lead": "Planificar.",
+        "text": "Presupuestos, forecasts y escenarios que el equipo directivo puede usar de verdad."
+      },
+      {
+        "question": "¿Dónde ganamos y dónde perdemos?",
+        "lead": "Rentabilidad y pricing.",
+        "text": "Rentabilidad por producto, estructura de costos, pricing, cobranzas y procesos financieros principales."
+      },
+      {
+        "question": "¿Dónde perdemos tiempo, dinero o capacidad?",
+        "lead": "Operar mejor.",
+        "text": "Utilización de recursos, dashboards y métricas para decidir mejor, y coordinación de proyectos entre equipos para que las recomendaciones se implementen."
+      }
+    ]
+  },
+  "decision": {
+    "title": "Del análisis a la decisión",
+    "text": "El reporte no es el objetivo. Cada trabajo termina con una recomendación clara: *esto es lo que está pasando y esto es lo que deberíamos hacer.*"
+  },
+  "start": {
+    "title": "Cómo empezamos y cuándo ves los primeros avances",
+    "items": [
+      "**Semanas 1 a 4: Diagnóstico acotado.** Alcance y precio cerrados. Recibís una lectura de tus números actuales y una lista priorizada de mejoras.",
+      "**Primeros 30 días tras decidir continuar: primer dashboard** funcionando en tu equipo.",
+      "**Meses 2 y 3: forecast y recomendaciones** integrados a tu ciclo de gestión."
+    ],
+    "note": "{{pending:la dueña del sitio confirma si los plazos \"2 a 4 semanas\" y \"30 días\" son los que quiere comprometer públicamente.}}"
+  },
+  "ways": {
+    "title": "Formas de trabajo y bajo riesgo",
+    "items": [
+      "**Empezar de a poco:** un diagnóstico acotado a precio cerrado, sin compromiso de continuar.",
+      "**Fractional:** acompañamiento mensual recurrente.",
+      "**Por proyecto:** alcance y entregables definidos.",
+      "**Asesoría:** por sesión."
+    ],
+    "closing": "Los modelos, dashboards y documentación que construimos juntos quedan en tu equipo. Acuerdo de confidencialidad firmado antes de empezar."
+  },
+  "connecta": {
+    "id": "conecta",
+    "title": "Cómo trabajo: el modelo C.O.N.E.C.T.A.",
+    "intro": "La misma secuencia aparece en cada proyecto, sin importar la industria ni el cargo.",
+    "steps": [
+      { "letter": "C", "text": "**Comprender.** Entiendo cómo funciona el negocio antes de proponer nada: objetivos, flujos y qué información realmente importa." },
+      { "letter": "O", "text": "**Observar.** Busco relaciones entre procesos, datos y personas que expliquen por qué los resultados son los que son." },
+      { "letter": "N", "text": "**Navegar la complejidad.** Reúno información fragmentada y miradas distintas en una sola visión compartida." },
+      { "letter": "E", "text": "**Estrategia.** Conecto el análisis con los objetivos del negocio para que las decisiones estén priorizadas y alineadas." },
+      { "letter": "C", "text": "**Colaborar.** El cambio sostenible depende de las personas. Trabajo con diálogo y acuerdos." },
+      { "letter": "T", "text": "**Transformar.** El objetivo no es un diagnóstico sino una mejora concreta: procesos más claros y decisiones más sólidas." },
+      { "letter": "A", "text": "**Aportar valor.** Mido el impacto para que el valor se vea y no se suponga." }
+    ]
+  },
+  "esg": {
+    "text": "**Línea complementaria: ESG y sostenibilidad.** Formación teórica en marcos de reporte de sostenibilidad (incluido CSRD), aplicada como complemento del trabajo financiero."
+  },
+  "background": {
+    "title": "Dónde trabajé, formación y herramientas",
+    "text": "Productos de crédito de consumo en BBVA Argentina (préstamos personales, tarjetas de crédito, hipotecarios, adelanto de haberes), como Design Lead y analista senior. Roles de producto en Leafnoise. {{pending:línea verificable de escala y años de experiencia.}}",
+    "education": "**Formación:** Certificación en Banca Digital (Universidad Torcuato Di Tella) · Sustentabilidad aplicada (Coursera).",
+    "tools": "**Herramientas:** SQL, Excel, Looker Studio, SAP, Salesforce, MicroStrategy, Teradata, Zapier, Make, N8N, Botmaker."
+  },
+  "casos": { "kind": "casos", "href": "casos", "label": "Ver casos de negocio" },
+  "finalCta": {
+    "title": "¿Estás buscando sumar a alguien, o un socio para un proyecto puntual?",
+    "ctas": [
+      { "kind": "booking", "label": "Hablemos" },
+      { "kind": "cv", "label": "Descargar CV" }
+    ]
+  }
+}

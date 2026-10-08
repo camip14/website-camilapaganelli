@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "About | Cami Paganelli",
+    "description": "Finance, data and processes. I work with companies and with small businesses and startups from Bariloche."
+  },
+  "headline": "I'm Cami Paganelli. I help organizations understand their reality and make better decisions.",
+  "blocks": [
+    {
+      "title": "Who I am.",
+      "paragraphs": [
+        "I work across finance, data and processes. Before proposing a solution, I make sure I understand how the business works and which information really matters. Then I organize it, translate it and turn it into decisions.",
+        "I worked on retail credit products at BBVA Argentina as Design Lead and senior analyst, and held product roles at Leafnoise. {{pending:years of experience.}} I now work independently with companies and with small businesses and startups in my community."
+      ]
+    },
+    {
+      "title": "Why Bariloche.",
+      "paragraphs": [
+        "I live in Bariloche by choice. I work with clients here and elsewhere, and I like that businesses in my city can have the same level of analysis as a large company."
+      ]
+    },
+    {
+      "title": "How I think.",
+      "paragraphs": [
+        "I'm interested in what sits between teams, numbers and people. Sustainable change needs all three."
+      ],
+      "link": { "kind": "internal", "href": "empresas#conecta", "label": "See the C.O.N.E.C.T.A. model →" }
+    },
+    {
+      "title": "Education.",
+      "paragraphs": ["Digital Banking certification (UTDT) · Applied Sustainability (Coursera)."]
+    },
+    {
+      "title": "Tools.",
+      "paragraphs": ["SQL, Excel, Looker Studio, SAP, Salesforce, MicroStrategy, Teradata, Zapier, Make, N8N, Botmaker."]
+    }
+  ],
+  "image": { "alt": "", "pending": "foto o ilustración sobria" },
+  "final": {
+    "title": "Let's work together.",
+    "ctas": [
+      { "kind": "internal", "href": "empresas", "label": "I'm a company" },
+      { "kind": "internal", "href": "pymes", "label": "I run a business" },
+      { "kind": "internal", "href": "emprendimientos", "label": "I'm just starting out" },
+      { "kind": "cv", "label": "Download CV" },
+      { "kind": "linkedin", "label": "LinkedIn" }
+    ]
+  }
+}

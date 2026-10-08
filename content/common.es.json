@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "empresas": "Empresas",
+    "pymes": "Pymes",
+    "emprendimientos": "Emprendimientos",
+    "sobreMi": "Sobre mí"
+  },
+  "navLabel": "Navegación principal",
+  "openMenu": "Menú",
+  "closeMenu": "Cerrar",
+  "skipToContent": "Ir al contenido",
+  "backHome": "← Volver al inicio",
+  "switchLanguage": "Cambiar idioma",
+  "footer": {
+    "privacy": "Privacidad",
+    "location": "Bariloche, Argentina",
+    "rights": "© 2026 Cami Paganelli"
+  },
+  "notFound": {
+    "title": "Esta página no existe.",
+    "back": "Volver al inicio"
+  }
+}

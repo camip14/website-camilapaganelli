@@ -1,0 +1,14 @@
+{
+  "variant": "summary",
+  "meta": {
+    "title": "Finance for startups | Clarity Session in Bariloche",
+    "description": "If you're just starting out, learn your real costs, minimum price and break-even point."
+  },
+  "hero": {
+    "headline": "Your project is just starting. Get your numbers organized from day one.",
+    "paragraphs": [
+      "A Clarity Session (60–90 minutes) to learn your margin per unit and your monthly break-even point, followed by an optional 45-day support program. Delivered in Spanish."
+    ]
+  },
+  "ctas": [{ "kind": "whatsapp", "label": "Contact via WhatsApp" }]
+}

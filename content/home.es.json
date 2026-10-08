@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "title": "Cami Paganelli | Finanzas con datos para decidir mejor",
+    "description": "Comprendo cómo funciona tu organización y convierto esa comprensión en decisiones con números. FP&A para empresas y gestión financiera para pymes y emprendimientos."
+  },
+  "hero": {
+    "headline": "Comprendo cómo funciona tu organización y convierto esa comprensión en decisiones con números."
+  },
+  "doors": [
+    {
+      "title": "Soy una empresa",
+      "subtitle": "FP&A, pricing y finanzas operativas para equipos",
+      "href": "empresas",
+      "track": "empresas"
+    },
+    {
+      "title": "Tengo un negocio",
+      "subtitle": "Sabé cuánto ganás de verdad y planificá tu año",
+      "href": "pymes",
+      "track": "pymes"
+    },
+    {
+      "title": "Estoy arrancando",
+      "subtitle": "Que tus números también arranquen ordenados",
+      "href": "emprendimientos",
+      "track": "emprendimientos"
+    }
+  ],
+  "credibility": {
+    "text": "Trabajé en productos de crédito de consumo en BBVA Argentina y en roles de producto. Hoy trabajo de forma independiente desde Bariloche, con empresas del país y del exterior.",
+    "links": [
+      { "kind": "internal", "href": "sobre-mi", "label": "Sobre mí" },
+      { "kind": "cv", "label": "Descargar CV" }
+    ]
+  }
+}

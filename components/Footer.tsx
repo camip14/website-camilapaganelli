@@ -1,85 +1,26 @@
-"use client";
+import Link from "next/link";
+import { siteConfig } from "@/site.config";
+import { getContent } from "@/lib/content";
+import { localePath, type Locale } from "@/lib/locales";
 
-import { useLanguage } from "@/lib/language";
+export default function Footer({ locale }: { locale: Locale }) {
+  const common = getContent("common", locale);
 
-const copy = {
-  sobreMi: { es: "Sobre mí", en: "About" },
-  tagline: {
-    es: "FP&A & BI · ESG · Automatización · Planificación · Argentina",
-    en: "FP&A & BI · ESG · Automation · Planning · Argentina",
-  },
-};
-
-export default function Footer() {
-  const { lang } = useLanguage();
   return (
-    <footer
-      style={{
-        borderTop: "0.5px solid var(--line)",
-        paddingTop: "1.5rem",
-        paddingBottom: "1.5rem",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          gap: "1rem",
-        }}
-        className="footer-inner"
-      >
-        <div style={{ display: "flex", alignItems: "center", gap: "1.2rem" }} className="footer-left">
-          <p
-            style={{
-              fontFamily: "var(--font-sans-ui), monospace",
-              fontSize: "0.65rem",
-              letterSpacing: "0.1em",
-              color: "var(--muted)",
-            }}
-          >
-            © 2026 · Camila Paganelli
-          </p>
-          <a
-            href="/sobre-mi"
-            style={{
-              fontFamily: "var(--font-sans-ui), monospace",
-              fontSize: "0.65rem",
-              letterSpacing: "0.1em",
-              color: "var(--muted)",
-              textDecoration: "none",
-            }}
-            onMouseEnter={(e) =>
-              ((e.currentTarget as HTMLAnchorElement).style.color = "var(--primary)")
-            }
-            onMouseLeave={(e) =>
-              ((e.currentTarget as HTMLAnchorElement).style.color = "var(--muted)")
-            }
-          >
-            {copy.sobreMi[lang]}
-          </a>
-        </div>
-        <p
-          style={{
-            fontFamily: "var(--font-sans-ui), monospace",
-            fontSize: "0.65rem",
-            letterSpacing: "0.1em",
-            color: "var(--muted)",
-          }}
-        >
-          {copy.tagline[lang]}
+    <footer className="footer">
+      <div className="wrap footer__inner">
+        <p>
+          {common.footer.rights} · {common.footer.location}
         </p>
+        <div className="footer__links">
+          {siteConfig.linkedinUrl && (
+            <a href={siteConfig.linkedinUrl} target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+          )}
+          <Link href={localePath(locale, "privacidad")}>{common.footer.privacy}</Link>
+        </div>
       </div>
-
-      <style jsx>{`
-        @media (max-width: 480px) {
-          .footer-inner {
-            flex-direction: column !important;
-            align-items: flex-start !important;
-            gap: 0.5rem !important;
-          }
-        }
-      `}</style>
     </footer>
   );
 }
