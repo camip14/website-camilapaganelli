@@ -9,6 +9,7 @@ import RichText, { Prose } from "@/components/RichText";
 import Section from "@/components/Section";
 import Steps from "@/components/Steps";
 import SummaryView from "@/components/SummaryView";
+import { hasVisibleActions } from "@/lib/actions";
 import { getContent } from "@/lib/content";
 import type { Locale } from "@/lib/locales";
 import { buildMetadata } from "@/lib/seo";
@@ -113,9 +114,11 @@ export default function EmprendimientosPage({ params }: Props) {
           <Faq items={c.faq.items} />
         </Section>
 
-        <Section>
-          <CtaGroup items={pairCtas} locale={locale} />
-        </Section>
+        {hasVisibleActions(pairCtas, locale) && (
+          <Section>
+            <CtaGroup items={pairCtas} locale={locale} />
+          </Section>
+        )}
       </main>
       <Footer locale={locale} />
     </>

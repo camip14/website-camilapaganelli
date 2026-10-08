@@ -11,6 +11,10 @@ export interface ResolvedAction {
   pending?: string; // detalle del dato que falta
 }
 
+export function hasVisibleActions(items: ActionItem[], locale: Locale): boolean {
+  return items.some((item) => resolveAction(item, locale) !== null);
+}
+
 // Devuelve null cuando el elemento no debe renderizarse (producción sin destino, o bloque [OCULTO]).
 export function resolveAction(item: ActionItem, locale: Locale): ResolvedAction | null {
   const base = { label: item.label, external: false };

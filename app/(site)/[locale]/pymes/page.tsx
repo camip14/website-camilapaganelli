@@ -4,11 +4,12 @@ import CtaGroup from "@/components/CtaGroup";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import RichText, { Prose } from "@/components/RichText";
+import RichText, { Prose, hasVisibleText } from "@/components/RichText";
 import Section from "@/components/Section";
 import Steps from "@/components/Steps";
 import SummaryView from "@/components/SummaryView";
 import Timeline from "@/components/Timeline";
+import { hasVisibleActions } from "@/lib/actions";
 import { getContent } from "@/lib/content";
 import type { Locale } from "@/lib/locales";
 import { buildMetadata } from "@/lib/seo";
@@ -96,14 +97,18 @@ export default function PymesPage({ params }: Props) {
 
         <Section title={c.faq.title}>
           <Faq items={c.faq.items} />
-          <div style={{ marginTop: "1rem" }}>
-            <Prose text={c.faq.note} />
-          </div>
+          {hasVisibleText(c.faq.note) && (
+            <div style={{ marginTop: "1rem" }}>
+              <Prose text={c.faq.note} />
+            </div>
+          )}
         </Section>
 
-        <Section>
-          <CtaGroup items={c.ctas} locale={locale} />
-        </Section>
+        {hasVisibleActions(c.ctas, locale) && (
+          <Section>
+            <CtaGroup items={c.ctas} locale={locale} />
+          </Section>
+        )}
       </main>
       <Footer locale={locale} />
     </>
