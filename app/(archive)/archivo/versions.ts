@@ -34,7 +34,7 @@ export const versions: ArchivedVersion[] = [
     branch: "archivo/v1-original",
     commit: "ae7bbe1",
     previewUrl: vercel("website-camilapaganelli-git-archivo-v1-bbd508-camip14s-projects"),
-    note: "Hasta que se publique la versión nueva, esta es también la rama main (producción).",
+    note: "Fue la versión en producción (rama main) hasta octubre de 2026.",
   },
   {
     id: "v2",
